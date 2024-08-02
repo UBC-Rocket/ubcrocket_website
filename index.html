@@ -10,8 +10,6 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- JQuery-->
-        <script src="js/jquery-3.7.1.min.js"></script>
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" type="text/css">
@@ -31,7 +29,7 @@
                     <!-- Align brand to the left -->
                     <a class="navbar-brand" href="index.html">UBC Rocket</a>
                     <!-- Toggler button for mobile view -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         Menu
                         <i class="fa fa-bars"></i>
                     </button>
@@ -43,29 +41,25 @@
                                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                                 <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                            </ul>
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item"><a class="nav-link mx-2 nav-pill nav-sponsor" href="pricing.html">Sponsor Us</a></li>
-                                <li class="nav-item"><a class="nav-link mx-2 nav-pill" href="faq.html">Join Us</a></li>
-                                <!-- <li class="nav-item dropdown">
+                                <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
                                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                         <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
                                         <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                        <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
-                                        <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
-                                    </ul>
-                                </li> -->
+                                <li class="nav-item"><a class="nav-link nav-pill nav-sponsor d-block d-md-none" href="pricing.html">Sponsor Us</a></li>
+                                <li class="nav-item"><a class="nav-link nav-pill d-block d-md-none" href="faq.html">Join Us</a></li>
+                            </ul>
+                            <ul class="navbar-nav ms-auto d-none d-md-flex">
+                                <li class="nav-item"><a class="nav-link mx-2 nav-pill nav-sponsor" href="pricing.html">Sponsor Us</a></li>
+                                <li class="nav-item"><a class="nav-link mx-2 nav-pill" href="faq.html">Join Us</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </nav>
+            
 
             <!-- Navigation-->
             <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -287,9 +281,12 @@
                 </div>
             </div>
         </footer>
+        <!-- JQuery -->
+        <script src="js/jquery-3.7.1.min.js"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Custom JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/scripts2.js"></script>
     </body>
 </html>

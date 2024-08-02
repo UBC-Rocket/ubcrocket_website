@@ -25,35 +25,18 @@
                 font-weight: 800;
                 letter-spacing: 1px;
                 text-transform: uppercase;
+                color: $gray-800;
             }
-        }
-    }
 
-    .nav-pill {
-        display: inline-block;
-        padding: 0.375rem 0.75rem;
-        border-radius: 50rem;
-        background-color: #224785;
-        color: white !important;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        border: 1px solid transparent;
-        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    }
-    
-    .nav-pill:hover {
-        background-color: #1c3c73;
-        text-decoration: none;
-    }
-    
-    .nav-sponsor {
-        background-color: white;
-        color: black !important;
-    }
-    
-    .nav-sponsor:hover {
-        background-color: lightgray;
+            .nav-pill {
+                color: #224785;
+            }
+            
+            .nav-sponsor {
+                color: $gray-500;
+            }
+            
+        }
     }
     
 
@@ -83,6 +66,33 @@
                     }
                 }
             }
+        }
+
+        .nav-pill {
+            display: inline-block;
+            padding: 0.375rem 0.75rem;
+            border-radius: 50rem;
+            background-color: #224785;
+            color: white !important;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            border: 1px solid transparent;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        
+        .nav-pill:hover {
+            background-color: #1c3c73;
+            text-decoration: none;
+        }
+        
+        .nav-sponsor {
+            background-color: $gray-200;
+            color: black !important;
+        }
+        
+        .nav-sponsor:hover {
+            background-color: lightgray;
         }
     }
 
@@ -130,6 +140,33 @@
                     }
                 }
             }
+
+            // .nav-pill {
+            //     display: inline-block;
+            //     padding: 0.375rem 0.75rem;
+            //     border-radius: 50rem;
+            //     background-color: white;
+            //     color: #224785 !important;
+            //     text-align: center;
+            //     white-space: nowrap;
+            //     vertical-align: middle;
+            //     border: 1px solid transparent;
+            //     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            // }
+            
+            // .nav-pill:hover {
+            //     background-color: lightgray;
+            //     text-decoration: none;
+            // }
+            
+            // .nav-sponsor {
+            //     background-color: black;
+            //     color: white !important;
+            // }
+            
+            // .nav-sponsor:hover {
+            //     background-color: #1c3c73;
+            // }
         }
 
         &.is-visible {
