@@ -12309,6 +12309,7 @@ footer .copyright {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
