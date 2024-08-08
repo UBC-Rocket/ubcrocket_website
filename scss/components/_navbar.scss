@@ -82,7 +82,7 @@
         }
         
         .nav-pill:hover {
-            background-color: #1c3c73;
+            background-color: fade-out(#224785, .2);
             text-decoration: none;
         }
         
@@ -92,7 +92,7 @@
         }
         
         .nav-sponsor:hover {
-            background-color: lightgray;
+            background-color: fade-out($white, .2);
         }
     }
 
@@ -141,32 +141,32 @@
                 }
             }
 
-            // .nav-pill {
-            //     display: inline-block;
-            //     padding: 0.375rem 0.75rem;
-            //     border-radius: 50rem;
-            //     background-color: white;
-            //     color: #224785 !important;
-            //     text-align: center;
-            //     white-space: nowrap;
-            //     vertical-align: middle;
-            //     border: 1px solid transparent;
-            //     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-            // }
+            .nav-pill {
+                display: inline-block;
+                padding: 0.375rem 0.75rem;
+                border-radius: 50rem;
+                background-color: $gray-600;
+                color: white !important;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                border: 1px solid transparent;
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            }
             
-            // .nav-pill:hover {
-            //     background-color: lightgray;
-            //     text-decoration: none;
-            // }
+            .nav-pill:hover {
+                background-color: fade-out($gray-600, 0.2);
+                text-decoration: none;
+            }
             
-            // .nav-sponsor {
-            //     background-color: black;
-            //     color: white !important;
-            // }
+            .nav-sponsor {
+                background-color: #224785;
+                color: white !important;
+            }
             
-            // .nav-sponsor:hover {
-            //     background-color: #1c3c73;
-            // }
+            .nav-sponsor:hover {
+                background-color: fade-out(#224785, 0.2)
+            }
         }
 
         &.is-visible {

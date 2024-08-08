@@ -3,12 +3,14 @@
 
 // Import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
 // Global CSS
 @import "./global";
 
 // Components
 @import "./components/buttons";
+@import "./components/cards";
 @import "./components/navbar";
 
 // Sections

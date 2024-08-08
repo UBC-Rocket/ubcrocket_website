@@ -10,13 +10,15 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- JQuery-->
-        <script src="js/jquery-3.7.1.min.js"></script>
-        <!-- Orgchart-->
-        <link rel="stylesheet" href="css/orgchart.css" type="text/css" />
-        <script src="js/orgchart.js"></script>
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles_.css" rel="stylesheet" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Custom theme CSS (includes Bootstrap)-->
+        <link href="./css/styles.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
@@ -25,8 +27,25 @@
                 <div class="container">
                     <!-- Align brand to the left -->
                     <a class="navbar-brand" href="index.html">UBC Rocket</a>
+                    <div class="ms-auto d-block d-md-none">
+                        <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
                     <!-- Toggler button for mobile view -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         Menu
                         <i class="fa fa-bars"></i>
                     </button>
@@ -38,44 +57,40 @@
                                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                                 <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                            </ul>
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item"><a class="nav-link mx-2 nav-pill nav-sponsor" href="pricing.html">Sponsor Us</a></li>
-                                <li class="nav-item"><a class="nav-link mx-2 nav-pill" href="faq.html">Join Us</a></li>
-                                <!-- <li class="nav-item dropdown">
+                                <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
                                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                         <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
                                         <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                        <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
-                                        <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
-                                    </ul>
-                                </li> -->
+                                <li class="nav-item"><a class="nav-link nav-pill nav-sponsor d-block d-md-none" href="https://donate.support.ubc.ca/page/20924/donate/1?transaction.dirgift=UBC+Rocket%20G1883">Sponsor Us</a></li>
+                                <li class="nav-item"><a class="nav-link nav-pill d-block d-md-none" href="faq.html">Join Us</a></li>
+                            </ul>
+                            <!-- Desktop view -->
+                            <ul class="navbar-nav ms-auto d-none d-md-flex">
+                                <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                                <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                                <li class="nav-item"><a class="nav-link mx-2 nav-pill nav-sponsor" href="https://donate.support.ubc.ca/page/20924/donate/1?transaction.dirgift=UBC+Rocket%20G1883" target="_blank">Sponsor Us</a></li>
+                                <li class="nav-item"><a class="nav-link mx-2 nav-pill" href="faq.html">Join Us</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </nav>
-
-            <!-- Header-->
-            <!-- <header class="py-5">
-                <div class="container px-5">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-xxl-6">
-                            <div class="text-center my-5">
-                                <h1 class="fw-bolder mb-3">Our mission is to make building websites easier for everyone.</h1>
-                                <p class="lead fw-normal text-muted mb-4">Start Bootstrap was built on the idea that quality, functional website templates and themes should be available to everyone. Use our open source, free products, or support us by purchasing one of our premium products or services.</p>
-                                <a class="btn btn-primary btn-lg" href="#scroll-target">Read our story</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header> -->
             <!-- About section one-->
             <section class="py-5 bg-dark" id="scroll-target">
                 <div class="container px-5 my-5">
@@ -83,7 +98,7 @@
                         <!-- <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div> -->
                         <div class="col-lg-6">
                             <h2 class="fw-bolder text-light">ABOUT US</h2>
-                            <p class="lead fw-normal text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate, quibusdam expedita, maiores eaque quisquam.</p>
+                            <p class="lead fw-normal text-light mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate, quibusdam expedita, maiores eaque quisquam.</p>
                         </div>
                     </div>
                 </div>
@@ -153,10 +168,16 @@
                 </div>
             </div>
         </footer>
+        <!-- JQuery -->
+        <script src="js/jquery-3.7.1.min.js"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
+        <!-- Custom JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/scripts2.js"></script>
+        <!-- Orgchart-->
+        <link rel="stylesheet" href="css/orgchart.css" type="text/css" />
+        <script src="js/orgchart.js"></script>
         <script>
             $(document).ready(function(){
               $.ajax({

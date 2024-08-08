@@ -1,0 +1,6 @@
+// Bootstrap overrides for cards
+
+.card, .card-header, .card-body, .card-footer{
+    border-radius: 0px !important;
+    --bs-card-inner-border-radius: 0px !important;
+}
