@@ -19,14 +19,15 @@
     }
 
     .navbar-nav {
+        a {
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $gray-800;
+        }
+
         >li.nav-item {
-            >a {
-                font-size: 12px;
-                font-weight: 800;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                color: $gray-800;
-            }
 
             .nav-pill {
                 color: #224785;
@@ -36,10 +37,53 @@
                 color: $gray-500;
             }
             
+            // Dropdown menu font styling to match rest of nav bar
+            // >ul.dropdown-menu {
+            //     >li {
+            //         >a {
+            //             font-size: 12px;
+            //             font-weight: 800;
+            //             letter-spacing: 1px;
+            //             text-transform: uppercase;
+            //             color: $gray-800;
+            //         }
+            //     }
+            // }
+            
         }
+
+    }
+
+// Dropdown menu
+    .dropdown-menu {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .dropdown-menu .dropdown-item {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #000;
+        padding: 5px 20px;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: rgba(255, 255, 255, 1);
+        color: #000;
+    }
+
+    .dropdown-menu.show {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .dropdown-menu {
+        min-width: 150px;
     }
     
-
+    // Settings for desktop view
     @media only screen and (min-width: 992px) {
         border-bottom: 1px solid transparent;
         background: transparent;
@@ -63,6 +107,20 @@
                     &:focus,
                     &:hover {
                         color: fade-out($white, .2);
+                    }
+                }
+                
+                >ul.dropdown-menu {
+                    >li {
+                        >a {
+                            padding: 10px 20px;
+                            color: $white;
+        
+                            &:focus,
+                            &:hover {
+                                color: fade-out($white, .2);
+                            }
+                        }
                     }
                 }
             }
@@ -93,6 +151,21 @@
         
         .nav-sponsor:hover {
             background-color: fade-out($white, .2);
+        }
+
+        // Dropdown menu for desktop view
+        .dropdown-menu {
+            background-color: rgba($color: #000000, $alpha: 0.1);
+        }
+    
+        .dropdown-menu .dropdown-item {
+            background-color: rgba($color: #000000, $alpha: 0.1);
+            color: #ffffff;
+        }
+    
+        .dropdown-menu .dropdown-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
         }
     }
 
