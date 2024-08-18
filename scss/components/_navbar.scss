@@ -19,7 +19,7 @@
     }
 
     .navbar-nav {
-        a {
+        a:not(.btn-social) {
             font-size: 12px;
             font-weight: 800;
             letter-spacing: 1px;
@@ -37,19 +37,6 @@
                 color: $gray-500;
             }
             
-            // Dropdown menu font styling to match rest of nav bar
-            // >ul.dropdown-menu {
-            //     >li {
-            //         >a {
-            //             font-size: 12px;
-            //             font-weight: 800;
-            //             letter-spacing: 1px;
-            //             text-transform: uppercase;
-            //             color: $gray-800;
-            //         }
-            //     }
-            // }
-            
         }
 
     }
@@ -65,7 +52,7 @@
         background-color: rgba(255, 255, 255, 0.9);
         color: #000;
         padding: 5px 20px;
-        font-weight: 500;
+        font-weight: 800;
         border-radius: 5px;
     }
 
