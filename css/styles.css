@@ -12135,6 +12135,9 @@ img::-moz-selection {
   text-transform: uppercase;
   color: #343a40;
 }
+#mainNav .navbar-nav a.dropdown-item {
+  color: #6c757d;
+}
 #mainNav .navbar-nav > li.nav-item .nav-pill {
   color: #224785;
 }
@@ -12176,19 +12179,15 @@ img::-moz-selection {
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: rgba(255, 255, 255, 0.8);
   }
-  #mainNav .navbar-nav > li.nav-item > a {
+  #mainNav .navbar-nav a:not(.btn-social) {
     padding: 10px 20px;
     color: #fff;
   }
-  #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
+  #mainNav .navbar-nav a:not(.btn-social):focus, #mainNav .navbar-nav a:not(.btn-social):hover {
     color: rgba(255, 255, 255, 0.8);
   }
-  #mainNav .navbar-nav > li.nav-item > ul.dropdown-menu > li > a {
-    padding: 10px 20px;
-    color: #fff;
-  }
-  #mainNav .navbar-nav > li.nav-item > ul.dropdown-menu > li > a:focus, #mainNav .navbar-nav > li.nav-item > ul.dropdown-menu > li > a:hover {
-    color: rgba(255, 255, 255, 0.8);
+  #mainNav .navbar-nav a.dropdown-item {
+    color: #495057;
   }
   #mainNav .nav-pill {
     display: inline-block;

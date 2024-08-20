@@ -8,3 +8,4 @@ A website for [UBC Rocket](https://www.ubcrocket.com/), a design team at the [Un
 
 ### Other tools used
 - [Bootstrap 3.0 Org-Chart by Lee Owens](https://github.com/owens2024/bootstrap-orgchart) (org chart - modified to integrate with rest of page)
+- [Infinite Multiple Level Dropdown Menu base](https://jsfiddle.net/dallaslu/mvk4uhzL/) (JS for cleaner dropdown menu)

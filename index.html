@@ -17,7 +17,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Custom theme CSS (includes Bootstrap)-->
         <link href="./css/styles.css" rel="stylesheet" />
-
     </head>
     <body class="d-flex flex-column min-vh-100 home-background" style="background-image: url('./assets/backgrounds/home_bg.png');">
         <main class="flex-shrink-0">
@@ -54,17 +53,40 @@
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Current Projects</a>
-                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#!">Project A</a></li>
-                                        <li><a class="dropdown-item" href="#!">Project B</a></li>
-                                    </ul>
+                                <li class="nav-item dropdown dropdown-hover dropdown-hover-all">
+                                    <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current projects</a>
+                                    <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                        <div class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-A" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project A</a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-A">
+                                                <a class="dropdown-item" href="#">Subteam A</a>
+                                                <a class="dropdown-item" href="#">Subteam B</a>
+                                                <a class="dropdown-item" href="#">Subteam C</a>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <div class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-B" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project B</a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-B">
+                                                <a class="dropdown-item" href="#">Subteam A</a>
+                                                <a class="dropdown-item" href="#">Subteam B</a>
+                                                <a class="dropdown-item" href="#">Subteam C</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-C" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project C</a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-C">
+                                                <a class="dropdown-item" href="#">Subteam A</a>
+                                                <a class="dropdown-item" href="#">Subteam B</a>
+                                                <a class="dropdown-item" href="#">Subteam C</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
                                 <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-link nav-pill nav-sponsor d-block d-md-none" href="#sponsors">Sponsor Us</a></li>
-                                <li class="nav-item"><a class="nav-link nav-pill d-block d-md-none" href="#join-us">Join Us</a></li>
+                                <li class="nav-item"><a id="joinUsMobile" class="nav-link nav-pill d-block d-md-none" href="#join-us">Join Us</a></li>
                             </ul>
                             <!-- Desktop view -->
                             <ul class="navbar-nav ms-auto d-none d-md-flex">
@@ -84,7 +106,7 @@
                                     <i class="fa-brands fa-youtube"></i>
                                 </a>
                                 <li class="nav-item"><a class="nav-link mx-2 nav-pill nav-sponsor" href="#sponsors">Sponsor Us</a></li>
-                                <li class="nav-item"><a class="nav-link mx-2 nav-pill" href="#join-us">Join Us</a></li>
+                                <li class="nav-item"><a id="joinUsDesktop" class="nav-link mx-2 nav-pill" href="#join-us">Join Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -222,6 +244,22 @@
                 </div>
             </div>
         </footer>
+        <div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 text-uppercase" id="regModalLabel">Registration closed</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Text displayed when regOpen is false. Registration is currently closed, sorry!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+                </div>
+              </div>
+            </div>
+        </div>
         <!-- JQuery -->
         <script src="js/jquery-3.7.1.min.js"></script>
         <!-- Bootstrap core JS-->

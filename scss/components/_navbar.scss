@@ -26,6 +26,9 @@
             text-transform: uppercase;
             color: $gray-800;
         }
+        a.dropdown-item {
+            color: $gray-600;
+        }
 
         >li.nav-item {
 
@@ -86,31 +89,44 @@
         }
 
         .navbar-nav {
-            >li.nav-item {
-                >a {
-                    padding: 10px 20px;
-                    color: $white;
+            a:not(.btn-social) {
+                padding: 10px 20px;
+                color: $white;
 
-                    &:focus,
-                    &:hover {
-                        color: fade-out($white, .2);
-                    }
-                }
-                
-                >ul.dropdown-menu {
-                    >li {
-                        >a {
-                            padding: 10px 20px;
-                            color: $white;
-        
-                            &:focus,
-                            &:hover {
-                                color: fade-out($white, .2);
-                            }
-                        }
-                    }
+                &:focus,
+                &:hover {
+                    color: fade-out($white, .2);
                 }
             }
+            a.dropdown-item {
+                color: $gray-700;
+            }
+
+            // >li.nav-item {
+            //     >a {
+            //         padding: 10px 20px;
+            //         color: $white;
+
+            //         &:focus,
+            //         &:hover {
+            //             color: fade-out($white, .2);
+            //         }
+            //     }
+                
+            //     >ul.dropdown-menu {
+            //         >li {
+            //             >a {
+            //                 padding: 10px 20px;
+            //                 color: $white;
+        
+            //                 &:focus,
+            //                 &:hover {
+            //                     color: fade-out($white, .2);
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
         }
 
         .nav-pill {
