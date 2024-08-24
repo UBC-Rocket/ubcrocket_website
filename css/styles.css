@@ -12070,6 +12070,37 @@ img::-moz-selection {
   border-color: #00657b !important;
 }
 
+.btn-link {
+  text-transform: none;
+  border-radius: 5px;
+  background-color: #052c65;
+  color: white;
+  text-decoration: none;
+}
+.btn-link:hover, .btn-link:focus, .btn-link:active {
+  color: #ececec;
+  background-color: #031c41;
+  border-color: #031c41;
+}
+
+.btn-sponsor {
+  background-color: rgb(201, 180, 22);
+}
+.btn-sponsor:hover, .btn-sponsor:focus, .btn-sponsor:active {
+  color: #ececec;
+  background-color: #a79512 !important;
+  border-color: #a79512 !important;
+}
+
+.btn-sponsor-link {
+  background-color: #004466;
+}
+.btn-sponsor-link:hover, .btn-sponsor-link:focus, .btn-sponsor-link:active {
+  color: #ececec;
+  background-color: #002b40 !important;
+  border-color: #002b40 !important;
+}
+
 .btn-lg, .btn-group-lg > .btn {
   font-size: 16px;
   padding: 25px 35px;
@@ -12166,6 +12197,9 @@ img::-moz-selection {
 }
 #mainNav .dropdown-menu {
   min-width: 150px;
+}
+#mainNav .dropdown-hover-all .dropdown-menu, #mainNav .dropdown-hover > .dropdown-menu.dropend {
+  margin-left: -1px !important;
 }
 @media only screen and (min-width: 992px) {
   #mainNav {
@@ -12331,6 +12365,75 @@ form .form-group:first-child .floating-label-form-group {
   border-top: 1px solid #dee2e6;
 }
 
+.fade-div {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.img-container {
+  position: absolute;
+  margin-top: 10vh;
+  min-width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+#fade-out {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.1s ease;
+  z-index: 2;
+}
+
+#subteam-A {
+  z-index: 9998;
+}
+
+#subteam-B {
+  z-index: 9998;
+}
+
+#subteam-C {
+  z-index: 9998;
+}
+
+.accordion-body {
+  background-color: #343a40;
+  color: white;
+}
+
+.accordion-button {
+  background-color: rgba(33, 37, 41, 0.9);
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(73, 80, 87, 0.9);
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem #495057;
+}
+
+.faq-header {
+  margin-top: 56px;
+  display: none;
+}
+
+@media only screen and (min-width: 776px) {
+  .faq-header {
+    display: block;
+  }
+}
 footer {
   padding: 50px 0 65px;
 }

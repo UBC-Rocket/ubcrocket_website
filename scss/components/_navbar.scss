@@ -73,6 +73,8 @@
         min-width: 150px;
     }
     
+    .dropdown-hover-all .dropdown-menu, .dropdown-hover > .dropdown-menu.dropend { margin-left:-1px !important }
+
     // Settings for desktop view
     @media only screen and (min-width: 992px) {
         border-bottom: 1px solid transparent;

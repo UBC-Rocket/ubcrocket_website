@@ -5,173 +5,292 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Modern Business - Start Bootstrap Template</title>
+        <title>UBC Rocket - FAQ</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Custom theme CSS (includes Bootstrap)-->
+        <link href="./css/styles.css" rel="stylesheet" />
+
     </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<body style="background-color: #212529;">
+    <main class="d-flex flex-column min-vh-100">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <!-- Align brand to the left -->
+                <a class="navbar-brand" href="index.html">UBC Rocket</a>
+                <div class="ms-auto d-block d-md-none">
+                    <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <!-- Toggler button for mobile view -->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- Navbar items -->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <div class="d-flex w-100">
+                        <ul class="navbar-nav me-auto">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                            <li class="nav-item dropdown dropdown-hover-all">
+                                <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current projects</a>
+                                <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item dropdown-toggle" href="current-projects.html" id="dropdown-A" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project A</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-A">
+                                            <a class="dropdown-item" href="current-projects.html#subteam-A">Subteam A</a>
+                                            <a class="dropdown-item" href="current-projects.html#subteam-B">Subteam B</a>
+                                            <a class="dropdown-item" href="current-projects.html#subteam-C">Subteam C</a>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="dropdown-divider"></div> -->
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-B" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project B</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-B">
+                                            <a class="dropdown-item" href="#">Subteam A</a>
+                                            <a class="dropdown-item" href="#">Subteam B</a>
+                                            <a class="dropdown-item" href="#">Subteam C</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-C" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project C</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-C">
+                                            <a class="dropdown-item" href="#">Subteam A</a>
+                                            <a class="dropdown-item" href="#">Subteam B</a>
+                                            <a class="dropdown-item" href="#">Subteam C</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
                             <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                    <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
-                                </ul>
-                            </li>
+                            <li class="nav-item"><a class="nav-link nav-pill nav-sponsor d-block d-md-none" href="#sponsors">Sponsor Us</a></li>
+                            <li class="nav-item"><a id="joinUsMobile" class="nav-link nav-pill d-block d-md-none" href="#join-us">Join Us</a></li>
+                        </ul>
+                        <!-- Desktop view -->
+                        <ul class="navbar-nav ms-auto d-none d-md-flex">
+                            <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <li class="nav-item"><a class="nav-link mx-2 nav-pill nav-sponsor" href="#sponsors">Sponsor Us</a></li>
+                            <li class="nav-item"><a id="joinUsDesktop" class="nav-link mx-2 nav-pill" href="#join-us">Join Us</a></li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-            <!-- Page Content-->
-            <section class="py-5">
-                <div class="container px-5 my-5">
-                    <div class="text-center mb-5">
-                        <h1 class="fw-bolder">Frequently Asked Questions</h1>
-                        <p class="lead fw-normal text-muted mb-0">How can we help you?</p>
-                    </div>
-                    <div class="row gx-5">
-                        <div class="col-xl-8">
-                            <!-- FAQ Accordion 1-->
-                            <h2 class="fw-bolder mb-3">Account &amp; Billing</h2>
-                            <div class="accordion mb-5" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button></h3>
-                                    <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong>
-                                            It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                            <code>.accordion-body</code>
-                                            , though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accordion Item #2</button></h3>
-                                    <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong>
-                                            It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                            <code>.accordion-body</code>
-                                            , though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Accordion Item #3</button></h3>
-                                    <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong>
-                                            It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                            <code>.accordion-body</code>
-                                            , though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- FAQ Accordion 2-->
-                            <h2 class="fw-bolder mb-3">Website Issues</h2>
-                            <div class="accordion mb-5 mb-xl-0" id="accordionExample2">
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">Accordion Item #1</button></h3>
-                                    <div class="accordion-collapse collapse show" id="collapseOne2" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong>
-                                            It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                            <code>.accordion-body</code>
-                                            , though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">Accordion Item #2</button></h3>
-                                    <div class="accordion-collapse collapse" id="collapseTwo2" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong>
-                                            It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                            <code>.accordion-body</code>
-                                            , though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">Accordion Item #3</button></h3>
-                                    <div class="accordion-collapse collapse" id="collapseThree2" aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong>
-                                            It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                            <code>.accordion-body</code>
-                                            , though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="card border-0 bg-light mt-xl-5">
-                                <div class="card-body p-4 py-lg-5">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div class="text-center">
-                                            <div class="h6 fw-bolder">Have more questions?</div>
-                                            <p class="text-muted mb-4">
-                                                Contact us at
-                                                <br />
-                                                <a href="#!">support@domain.com</a>
-                                            </p>
-                                            <div class="h6 fw-bolder">Follow us</div>
-                                            <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-twitter"></i></a>
-                                            <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-facebook"></i></a>
-                                            <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-linkedin"></i></a>
-                                            <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-youtube"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+        </nav>
+        <!-- Header -->
+        <header class="py-5 bg-dark">
+            <img src="./assets/FAQ page Rocket Header WHITE.png" alt="FAQ" class="img-fluid px-5 faq-header">
+        </header>
+
+        <!-- FAQ -->
+        <section class="container py-5 bg-dark">
+            <div class="row">
+                <h2 class="col text-uppercase text-light">Application related questions:</h2>
+            </div>
+            <div class="accordion accordion-flush" id="accordionApps">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-1" aria-expanded="false" aria-controls="flush-collapse-1">
+                        How can I join the team?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-1" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">By filling out the application form! Our application form will open soon after Imagine Day [Sept 3]. The form may take a bit of time to complete but we appreciate and take note when students put genuine effort into their application. The deadline for applications is 3 weeks after applications open. We will not accept any late applications.</div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-2" aria-expanded="false" aria-controls="flush-collapse-2">
+                        Do you have to be an engineer to join the team?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">Nope, simply fill out the application form with high quality answers! We accept students from all disciplines, faculties and programs and you do not need to have any prior knowledge or experience with rocketry.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-3" aria-expanded="false" aria-controls="flush-collapse-3">
+                        What projects can I apply for?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">On the application form, we will tell you what projects and subteams are accepting new students. Please reference our subteam overview page in each current project for more information.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-4" aria-expanded="false" aria-controls="flush-collapse-4">
+                        Do I have to apply to a specific project and subteam?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-4" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">Yes, you will have to pick the project and subteam you would like to join when you fill out your application.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-5" aria-expanded="false" aria-controls="flush-collapse-5">
+                        What is your selection process for applicants?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-5" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">All applications are reviewed and ones that stand out are invited for an interview. Successful candidates will hear from us soon after interviews are completed.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-6" aria-expanded="false" aria-controls="flush-collapse-6">
+                        What do you look for in an applicant?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-6" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">We want students who are genuinely interested in rocketry and will back it up by fully committing to the team's goals and efforts. You don’t have to have any prior experience. Show us you are willing to put in the time and we will show you how to build a rocket.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-7" aria-expanded="false" aria-controls="flush-collapse-7">
+                        What is the time commitment?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-7" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">This varies by subteam & project but members should expect to commit about 10 hours a week. Most subteams will have a mandatory weekend meeting and a short mid-week meeting to keep manufacturing on track. Feel free to ask about specific subteam time commitments in your application.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-8" aria-expanded="false" aria-controls="flush-collapse-8">
+                        Do you recruit during second semester?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-8" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">Traditionally, we do not formally open our application during second semester due to the limited time we have to train new students. There are cases where we will open applications for specific positions throughout the year, so keep an eye out for that!</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-9" aria-expanded="false" aria-controls="flush-collapse-9">
+                        Do I have to continue attending meetings after school ends in April?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-9" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">Members are not required to continue attending meetings after April, but depending on the status of the project and the remaining time until competition, we would really appreciate people who can put in extra effort to finish the project.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="col pt-5 text-uppercase text-light">Rocketry related questions:</h2>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-10" aria-expanded="false" aria-controls="flush-collapse-10">
+                        How does sponsorship work?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-10" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">Any support that you are able to provide is invaluable to our project since we rely on sponsorship and external funding to launch rockets so consistently. In return for your support, we would be honoured to have your company logo on our competition team apparel, website, social media, and of course, the rockets themselves!</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-11" aria-expanded="false" aria-controls="flush-collapse-11">
+                        Are competitions mandatory to attend?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-11" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">Competitions are not mandatory to attend but are heavily encouraged. They are the place to see your hard work in action! You also get to meet other rocketry teams from around the world, learn the logistics of launching a rocket, and talk with leading aerospace companies about their student opportunities.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-12" aria-expanded="false" aria-controls="flush-collapse-12">
+                        When are the competitions?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-12" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">We like to attend two competitions during the summer. In late June, we attend the Spaceport America Cup in New Mexico, USA, and in late August, we attend the Launch Canada competition in Ontario, Canada.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-13" aria-expanded="false" aria-controls="flush-collapse-13">
+                        Are there any non-competition-related events?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-13" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">Outside of our competitions, our only other big event is Imagine Day, where we recruit for the upcoming year. All other events are held on a per subteam basis and most revolve around manufacturing and preparing for competition.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-14" aria-expanded="false" aria-controls="flush-collapse-14">
+                        Will I get to work with explosives?
+                    </button>
+                    </h2>
+                    <div id="flush-collapse-14" class="accordion-collapse collapse" data-bs-parent="#accordionApps">
+                    <div class="accordion-body">Nope! Due to Canadian regulations and licensing requirements, our rocket motors are purchased from a Canadian supplier. All testing is done by our motor suppliers.</div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        </section>
+
+    </main>
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/scripts2.js"></script>
+</body>
 </html>

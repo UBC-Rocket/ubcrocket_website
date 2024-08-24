@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>UBC Rocket - Current Projects</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Custom theme CSS (includes Bootstrap)-->
+        <link href="./css/styles.css" rel="stylesheet" />
+    </head>
+<body style="background-color: #212529;">
+    <main class="d-flex flex-column min-vh-100">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <!-- Align brand to the left -->
+                <a class="navbar-brand" href="index.html">UBC Rocket</a>
+                <div class="ms-auto d-block d-md-none">
+                    <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <!-- Toggler button for mobile view -->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- Navbar items -->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <div class="d-flex w-100">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item dropdown dropdown-hover-all">
+                                <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current projects</a>
+                                <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item dropdown-toggle" href="current-projects.html" id="dropdown-A" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project A</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-A">
+                                            <a class="dropdown-item" href="current-projects.html#subteam-A">Subteam A</a>
+                                            <a class="dropdown-item" href="current-projects.html#subteam-B">Subteam B</a>
+                                            <a class="dropdown-item" href="current-projects.html#subteam-C">Subteam C</a>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="dropdown-divider"></div> -->
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-B" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project B</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-B">
+                                            <a class="dropdown-item" href="#">Subteam A</a>
+                                            <a class="dropdown-item" href="#">Subteam B</a>
+                                            <a class="dropdown-item" href="#">Subteam C</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-C" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project C</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-C">
+                                            <a class="dropdown-item" href="#">Subteam A</a>
+                                            <a class="dropdown-item" href="#">Subteam B</a>
+                                            <a class="dropdown-item" href="#">Subteam C</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
+                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link nav-pill nav-sponsor d-block d-md-none" href="#sponsors">Sponsor Us</a></li>
+                            <li class="nav-item"><a id="joinUsMobile" class="nav-link nav-pill d-block d-md-none" href="#join-us">Join Us</a></li>
+                        </ul>
+                        <!-- Desktop view -->
+                        <ul class="navbar-nav ms-auto d-none d-md-flex">
+                            <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <li class="nav-item"><a class="nav-link mx-2 nav-pill nav-sponsor" href="#sponsors">Sponsor Us</a></li>
+                            <li class="nav-item"><a id="joinUsDesktop" class="nav-link mx-2 nav-pill" href="#join-us">Join Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- About section one-->
+        <section class="py-5 bg-dark vh-100" style="position: relative;">
+            <div class="container my-5" id="fade-out">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col col-lg-6 text-center">
+                        <h1 class="fw-bolder text-light" style="font-size: 3.5rem;">ABOUT US</h1>
+                        <p class="lead fw-normal text-light mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate, quibusdam expedita, maiores eaque quisquam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container d-flex justify-content-center">
+                <img id="rocket-render" src="./assets/rocket_renders/sample_rocket.png" alt="" class="img-fluid min-vh-100">
+            </div>
+        </section>
+        <!-- Subteam fade texts -->
+        <section class="container text-center" style="margin-top: -40vh;">
+            <div class="row">
+                <div id="subteam-A" class="p-3 my-2 col col-10 offset-1 col-md-4 offset-md-0 d-flex flex-column justify-content-center align-items-center fade-div rounded" data-offset="0.2">
+                    <h4 class="text-center">Subteam A</h4>
+                    <p class="text-center my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia deserunt ipsam voluptatem molestias sit.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="subteam-B" class="p-3 my-2 col col-10 offset-1 col-md-4 offset-md-8 d-flex flex-column justify-content-center align-items-center fade-div rounded" data-offset="0.4">
+                    <h4 class="text-center">Subteam B</h4>
+                    <p class="text-center my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia deserunt ipsam voluptatem molestias sit.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="subteam-C" class="p-3 my-2 col col-10 offset-1 col-md-4 offset-md-2 d-flex flex-column justify-content-center align-items-center fade-div rounded" data-offset="0.6">
+                    <h4 class="text-center">Subteam C</h4>
+                    <p class="text-center my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia deserunt ipsam voluptatem molestias sit.</p>
+                </div>
+            </div>
+        </section>
+        <div id="spacer" class="w-100"></div>
+    </main>
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/scripts2.js"></script>
+    <!-- Scroll animation-->
+    <script>
+        // Fade animation on scroll
+        window.addEventListener('scroll', function () {
+            let scrollPosition = window.scrollY;
+            let fadeSpeed = 0.1; // percentage of screen that needs to be scrolled before animation complete
+            
+            // subteam text boxes
+            document.querySelectorAll('.fade-div').forEach(div => {
+                let offsetFactor = parseFloat(div.getAttribute('data-offset'));
+                let offset = window.innerHeight * offsetFactor;
+                let opacity_enter = Math.min((scrollPosition - offset) / (window.innerHeight * fadeSpeed), 1);
+                div.style.opacity = opacity_enter;
+            });
+
+            // title text
+            let titleOffsetFactor = 0.1
+            let offset = window.innerHeight * titleOffsetFactor;
+            let opacity_exit = Math.max(1 - (scrollPosition - offset) / (window.innerHeight * fadeSpeed), 0);
+            document.getElementById('fade-out').style.opacity = opacity_exit;
+        });
+
+        // Spacer for layout purposes (so the footer goes in the right place)
+        document.addEventListener("DOMContentLoaded", function() {
+            var img = document.getElementById('rocket-render');
+            var spacer = document.getElementById('spacer');
+            var container = document.querySelector('section.py-5.bg-dark .container');
+            var navbar = document.getElementById('mainNav');
+
+            // Calculate the total height: image height + container height + navbar height
+            var totalHeight = img.clientHeight - container.clientHeight - navbar.clientHeight - 350;
+            
+            // Set the spacer's height
+            spacer.style.height = totalHeight + 'px';
+        });
+    </script>
+</body>
+</html>

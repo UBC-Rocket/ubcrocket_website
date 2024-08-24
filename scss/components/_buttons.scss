@@ -22,6 +22,43 @@
     }
 }
 
+.btn-link {
+    text-transform: none;
+    border-radius: 5px;
+    background-color: $blue-800;
+    color: white;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+        color: darken($white, 7.5);
+        background-color: darken($blue-800, 7.5);
+        border-color: darken($blue-800, 7.5);
+    }
+}
+
+.btn-sponsor {
+    background-color: rgb(201, 180, 22);
+    &:hover,
+    &:focus,
+    &:active {
+        color: darken($white, 7.5);
+        background-color: darken(rgb(201, 180, 22), 7.5) !important;
+        border-color: darken(rgb(201, 180, 22), 7.5) !important;
+    }
+}
+
+.btn-sponsor-link {
+    background-color: #004466;
+    &:hover,
+    &:focus,
+    &:active {
+        color: darken($white, 7.5);
+        background-color: darken(#004466, 7.5) !important;
+        border-color: darken(#004466, 7.5) !important;
+    }
+}
+
 .btn-lg {
     font-size: 16px;
     padding: 25px 35px;

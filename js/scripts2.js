@@ -71,5 +71,8 @@ fetch('../assets/config.json')
                 $bs.Dropdown.getOrCreateInstance(toggle).toggle();
             }
         });
+        dd.addEventListener('click', function(e) {
+            window.location.href = e.target.getAttribute('href');
+        });
     });
 })(bootstrap);

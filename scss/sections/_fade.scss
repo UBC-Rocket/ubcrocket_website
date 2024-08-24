@@ -1,0 +1,41 @@
+.fade-div {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    // position: fixed;
+    // top: 20px;
+    // left: 0;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.img-container {
+    position: absolute;
+    margin-top: 10vh;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#fade-out {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.1s ease;
+    z-index: 2;
+}
+
+#subteam-A {
+    z-index: 9998;
+}
+
+#subteam-B {
+    z-index: 9998;
+}
+
+#subteam-C {
+    z-index: 9998;
+}
