@@ -12050,6 +12050,16 @@ img::-moz-selection {
   background: transparent;
 }
 
+.home-background {
+  background-image: url("../../assets/backgrounds/bnb.jpg");
+  background-color: #212529;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 2s ease-in-out;
+}
+
 .btn {
   font-size: 14px;
   font-weight: 800;
@@ -12120,7 +12130,7 @@ img::-moz-selection {
 }
 
 .btn-social:hover {
-  color: rgba(52, 58, 64, 0.8);
+  color: rgba(34, 71, 133, 0.8);
 }
 
 @media only screen and (min-width: 992px) {
@@ -12128,13 +12138,13 @@ img::-moz-selection {
     color: white;
   }
   .btn-social:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(34, 71, 133, 0.8);
   }
   .is-fixed .btn-social {
     color: #212529;
   }
   .is-fixed .btn-social:hover {
-    color: rgba(33, 37, 41, 0.8);
+    color: rgba(34, 71, 133, 0.8);
   }
 }
 .card, .card-header, .card-body, .card-footer {
@@ -12175,6 +12185,10 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item .nav-sponsor {
   color: #adb5bd;
 }
+#mainNav .img-logo {
+  display: none;
+  filter: invert(1);
+}
 #mainNav .dropdown-menu {
   background-color: transparent;
   border: none;
@@ -12188,7 +12202,7 @@ img::-moz-selection {
   border-radius: 5px;
 }
 #mainNav .dropdown-menu .dropdown-item:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: #224785;
   color: #000;
 }
 #mainNav .dropdown-menu.show {
@@ -12211,17 +12225,17 @@ img::-moz-selection {
     color: #fff;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(34, 71, 133, 0.8);
   }
   #mainNav .navbar-nav a:not(.btn-social) {
     padding: 10px 20px;
     color: #fff;
   }
   #mainNav .navbar-nav a:not(.btn-social):focus, #mainNav .navbar-nav a:not(.btn-social):hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(34, 71, 133, 0.8);
   }
   #mainNav .navbar-nav a.dropdown-item {
-    color: #495057;
+    color: #6c757d;
   }
   #mainNav .nav-pill {
     display: inline-block;
@@ -12245,6 +12259,12 @@ img::-moz-selection {
   }
   #mainNav .nav-sponsor:hover {
     background-color: rgba(255, 255, 255, 0.8);
+  }
+  #mainNav .img-logo {
+    display: block;
+    filter: invert(0);
+    transform: scale(2);
+    transform-origin: center !important;
   }
   #mainNav .dropdown-menu {
     background-color: rgba(0, 0, 0, 0.1);
@@ -12272,18 +12292,25 @@ img::-moz-selection {
     transition: transform 0.2s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.9);
+    margin-top: -20px;
+    padding-top: 8px;
+    padding-bottom: 0px;
+  }
+  #mainNav.is-fixed .img-logo {
+    display: block;
+    filter: invert(1);
   }
   #mainNav.is-fixed .navbar-brand {
     color: #212529;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085A1;
+    color: #224785;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
     color: #212529;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #0085A1;
+    color: #224785;
   }
   #mainNav.is-fixed .nav-pill {
     display: inline-block;
@@ -12311,6 +12338,14 @@ img::-moz-selection {
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
     transform: translate3d(0, 100%, 0);
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #mainNav .img-logo {
+    display: block;
+    filter: invert(0);
+    transform: scale(1);
+    transform-origin: center !important;
   }
 }
 
@@ -12406,17 +12441,25 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 .accordion-body {
-  background-color: #343a40;
+  background-color: rgba(34, 71, 133, 0.3);
   color: white;
 }
 
+.accordion-collapse {
+  background-color: #212529;
+}
+
+.accordion-header {
+  background-color: #212529;
+}
+
 .accordion-button {
-  background-color: rgba(33, 37, 41, 0.9);
+  background-color: rgba(23, 49, 95, 0.4);
   color: white;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: rgba(73, 80, 87, 0.9);
+  background-color: rgba(34, 71, 133, 0.9);
   color: white;
 }
 

@@ -1,15 +1,23 @@
 .accordion-body {
-    background-color: rgba($color: $gray-800, $alpha: 1.0);
+    background-color: rgba($color: #224785, $alpha: 0.3);
     color: white;
 }
 
+.accordion-collapse {
+    background-color: #212529;
+}
+
+.accordion-header {
+    background-color: #212529;
+}
+
 .accordion-button {
-    background-color: rgba($color: $gray-900, $alpha: 0.9);
+    background-color: rgba($color: #17315f, $alpha: 0.4);
     color: white;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: rgba($color: $gray-700, $alpha: 0.9);
+    background-color: rgba($color: #224785, $alpha: 0.9);
     color: white;
 }
 

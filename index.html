@@ -18,13 +18,15 @@
         <!-- Custom theme CSS (includes Bootstrap)-->
         <link href="./css/styles.css" rel="stylesheet" />
     </head>
-    <body class="d-flex flex-column min-vh-100 home-background" style="background-image: url('./assets/backgrounds/home_bg.png');">
+    <body class="d-flex flex-column min-vh-100 home-background">
         <main class="flex-shrink-0">
             <!-- Navigation -->
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
                 <div class="container">
                     <!-- Align brand to the left -->
-                    <a class="navbar-brand" href="index.html">UBC Rocket</a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/ubcrocket_logo_white_long.png" alt="..." class="img-fluid img-logo" style="transform: scale(1);">
+                    </a>
                     <div class="ms-auto d-block d-md-none">
                         <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
                             <i class="fab fa-facebook-f"></i>
@@ -116,8 +118,8 @@
             <section class="masthead">
                 <div class="container" id="title">
                     <div class="text-center mt-5 pt-5 text-light">
-                        <h1 class="masthead-heading display-1 text-uppercase">UBC Rocket</h1>
-                        <p class="masthead-subheading">Say something cool about us here</p>
+                        <h1 class="masthead-heading display-1 text-uppercase" style="color: #224785;">UBC Rocket</h1>
+                        <p class="masthead-subheading" style="color: #224785">Say something cool about us here</p>
                         <!-- <p>Bootstrap v5.2.3</p> -->
                     </div>
                 </div>
@@ -272,6 +274,27 @@
         <script src="js/scripts2.js"></script>
         <!-- Registration text script -->
         <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const images = [
+                "./assets/backgrounds/bnb.jpg",
+                "./assets/backgrounds/B&B_cue_card_photo.jpg",
+                "./assets/backgrounds/garibaldi.jpg",
+                "./assets/backgrounds/hotfire1.jpg",
+                "./assets/backgrounds/hotfire2.jpg",
+                "./assets/backgrounds/hotfire3.png",
+                "./assets/backgrounds/silvertip.jpg",
+                "./assets/backgrounds/skypilot.jpg"
+                ];
+
+                let currentIndex = 0;
+                const changeBackground = () => {
+                currentIndex = (currentIndex + 1) % images.length;
+                document.querySelector(".home-background").style.backgroundImage = `url('${images[currentIndex]}')`;
+                };
+
+                setInterval(changeBackground, 15000); // Change every 15 seconds
+            });
+
             fetch('./assets/config.json')
                 .then(response => response.json())
                 .then(data => {

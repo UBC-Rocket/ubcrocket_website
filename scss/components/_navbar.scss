@@ -44,7 +44,13 @@
 
     }
 
-// Dropdown menu
+    // Logo banner on main page
+    .img-logo {
+        display: none;
+        filter: invert(1);
+    }
+
+    // Dropdown menu
     .dropdown-menu {
         background-color: transparent;
         border: none;
@@ -60,7 +66,7 @@
     }
 
     .dropdown-menu .dropdown-item:hover {
-        background-color: rgba(255, 255, 255, 1);
+        background-color: #224785;
         color: #000;
     }
 
@@ -86,7 +92,7 @@
 
             &:focus,
             &:hover {
-                color: fade-out($white, .2);
+                color: fade-out(#224785, .2);
             }
         }
 
@@ -97,38 +103,12 @@
 
                 &:focus,
                 &:hover {
-                    color: fade-out($white, .2);
+                    color: fade-out(#224785, .2);
                 }
             }
             a.dropdown-item {
-                color: $gray-700;
+                color: $gray-600;
             }
-
-            // >li.nav-item {
-            //     >a {
-            //         padding: 10px 20px;
-            //         color: $white;
-
-            //         &:focus,
-            //         &:hover {
-            //             color: fade-out($white, .2);
-            //         }
-            //     }
-                
-            //     >ul.dropdown-menu {
-            //         >li {
-            //             >a {
-            //                 padding: 10px 20px;
-            //                 color: $white;
-        
-            //                 &:focus,
-            //                 &:hover {
-            //                     color: fade-out($white, .2);
-            //                 }
-            //             }
-            //         }
-            //     }
-            // }
         }
 
         .nav-pill {
@@ -156,6 +136,14 @@
         
         .nav-sponsor:hover {
             background-color: fade-out($white, .2);
+        }
+        
+        // Make logo white on desktop
+        .img-logo {
+            display: block;
+            filter: invert(0);
+            transform: scale(2);
+            transform-origin: center !important;
         }
 
         // Dropdown menu for desktop view
@@ -196,13 +184,21 @@
             transition: transform 0.2s;
             border-bottom: 1px solid darken($white, .05);
             background-color: fade-out($white, .1);
+            margin-top: -20px;
+            padding-top: 8px;
+            padding-bottom: 0px;
+
+            .img-logo {
+                display: block;
+                filter: invert(1);
+            }
 
             .navbar-brand {
                 color: $gray-900;
 
                 &:focus,
                 &:hover {
-                    color: $primary;
+                    color: #224785;
                 }
             }
 
@@ -213,7 +209,7 @@
 
                         &:focus,
                         &:hover {
-                            color: $primary;
+                            color: #224785;
                         }
                     }
                 }
@@ -254,6 +250,15 @@
             -ms-transform: translate3d(0, 100%, 0);
             -o-transform: translate3d(0, 100%, 0);
             transform: translate3d(0, 100%, 0);
+        }
+    }
+
+    @media only screen and (min-width: 1400px) {
+        .img-logo {
+            display: block;
+            filter: invert(0);
+            transform: scale(1);
+            transform-origin: center !important;
         }
     }
 }
