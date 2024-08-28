@@ -6,4 +6,23 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     transition: background-image 2s ease-in-out;
-  }
+    position: relative;
+    z-index: 0;
+}
+
+.home-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 2s ease-in-out;
+  filter: brightness(50%); /* Add your desired filters here */
+  z-index: -1; /* Ensure the filter stays behind the content */
+}

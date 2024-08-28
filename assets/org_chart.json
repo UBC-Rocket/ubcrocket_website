@@ -1,0 +1,53 @@
+[{
+    "label": "Faculty Advisor",
+    "name": "Dr. Mattison",
+    "children": [{
+        "name" : "Jane Smith",
+        "label": "COTS Project Manager",
+        "children": [{
+            "name": "Peter West",
+            "label": "Internals Lead"
+        }, {
+            "name" : "Sarah Jones",
+            "label": "Aerostructures Lead"
+        }, {
+            "name" : "John Smith",
+            "label": "Recovery Lead"
+        }, {
+            "name" : "Placeholder Name",
+            "label": "Avionic Software Lead"
+        }, {
+            "name" : "Placeholder Name",
+            "label": "Avionic Hardware Lead"
+        }, {
+            "name" : "Placeholder Name",
+            "label": "Payloads Lead"
+        }]
+    }, {
+        "name" : "Richard Easton",
+        "label": "Liquid Rocket Project Manager",
+        "children": [{
+            "name": "Peter West",
+            "label": "Propulsion Lead"
+        }, {
+            "name" : "John Smith",
+            "label": "Recovery Lead"
+        }, {
+            "name" : "Placeholder Name",
+            "label": "Propulsion Testing Lead"
+        }, {
+            "name" : "Placeholder Name",
+            "label": "Pressure Vessels Lead"
+        }]
+    }, {
+        "name" : "Alice Ozaltin",
+        "label": "Thrust Vectoring Rocket Project Manager",
+        "children": [{
+            "name": "Peter West",
+            "label": "Software Lead"
+        }, {
+            "name" : "John Smith",
+            "label": "Hardware Lead"
+        }]
+    }]
+}]

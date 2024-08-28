@@ -4,3 +4,8 @@
     border-radius: 0px !important;
     --bs-card-inner-border-radius: 0px !important;
 }
+
+.card-img-top {
+    height: 260px;
+    object-fit: cover;
+}

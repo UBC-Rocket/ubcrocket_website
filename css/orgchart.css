@@ -1,5 +1,9 @@
 /* OrgChart Styling */
 
+.node-label {
+  font-size: smaller;
+}
+
 .org-tree {
   display: flex;
   flex-direction: column;

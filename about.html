@@ -33,9 +33,9 @@
                         <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
+                        <!-- <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
                             <i class="fa-brands fa-x-twitter"></i>
-                        </a>
+                        </a> -->
                         <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
@@ -55,7 +55,7 @@
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <div class="d-flex w-100">
                             <ul class="navbar-nav me-auto">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item home-button"><a class="nav-link" href="index.html">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                                 <li class="nav-item dropdown dropdown-hover-all">
                                     <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current projects</a>
@@ -89,17 +89,17 @@
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
                                 <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                                <li class="nav-item"><a class="nav-link nav-pill nav-sponsor d-block d-md-none" href="#sponsors">Sponsor Us</a></li>
-                                <li class="nav-item"><a id="joinUsMobile" class="nav-link nav-pill d-block d-md-none" href="#join-us">Join Us</a></li>
+                                <li class="nav-item"><a class="nav-link nav-pill nav-sponsor d-block d-md-none" href="index.html#sponsors">Sponsor Us</a></li>
+                                <li class="nav-item"><a id="joinUsMobile" class="nav-link nav-pill d-block d-md-none" href="index.html#join-us">Join Us</a></li>
                             </ul>
                             <!-- Desktop view -->
                             <ul class="navbar-nav ms-auto d-none d-md-flex">
                                 <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
+                                <!-- <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
                                     <i class="fa-brands fa-x-twitter"></i>
-                                </a>
+                                </a> -->
                                 <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
@@ -124,6 +124,9 @@
                         <div class="col-lg-6">
                             <h2 class="fw-bolder text-light">ABOUT US</h2>
                             <p class="lead fw-normal text-light mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate, quibusdam expedita, maiores eaque quisquam.</p>
+                        </div>
+                        <div class="col">
+                            <img src="./assets/team_pictures/team_photo.jpg" alt="Team photo" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -201,7 +204,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  Text displayed when regOpen is false. Registration is currently closed, sorry!
+                  Currently, we are not accepting applications. Thank you for your interest.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
@@ -223,11 +226,11 @@
             $(document).ready(function(){
               $.ajax({
               dataType: "json",
-              url: "assets/sample_org.json"}).done( function( data ) {
+              url: "assets/org_chart.json"}).done( function( data ) {
                 OrgTree.setOptions({renderNode: function(node) {
                   return `<div class="node center-block text-center">
-                                    <strong>${node.name}</strong><br />
-                                    <em>${node.label}</em>
+                                    <strong class="node-title">${node.name}</strong><br />
+                                    <em class="node-label">${node.label}</em>
                                 </div>`
                 }});
                 OrgTree.makeOrgTree($('#tree'), data);

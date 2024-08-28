@@ -75,7 +75,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-body-font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -5733,7 +5733,7 @@ textarea.form-control-lg {
   z-index: var(--bs-tooltip-zindex);
   display: block;
   margin: var(--bs-tooltip-margin);
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5843,7 +5843,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -12058,6 +12058,25 @@ img::-moz-selection {
   background-repeat: no-repeat;
   background-attachment: fixed;
   transition: background-image 2s ease-in-out;
+  position: relative;
+  z-index: 0;
+}
+
+.home-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 2s ease-in-out;
+  filter: brightness(50%); /* Add your desired filters here */
+  z-index: -1; /* Ensure the filter stays behind the content */
 }
 
 .btn {
@@ -12152,6 +12171,12 @@ img::-moz-selection {
   --bs-card-inner-border-radius: 0px !important;
 }
 
+.card-img-top {
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
@@ -12185,9 +12210,12 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item .nav-sponsor {
   color: #adb5bd;
 }
-#mainNav .img-logo {
+#mainNav .navbar-brand {
   display: none;
   filter: invert(1);
+}
+#mainNav .home-button {
+  display: block;
 }
 #mainNav .dropdown-menu {
   background-color: transparent;
@@ -12260,10 +12288,10 @@ img::-moz-selection {
   #mainNav .nav-sponsor:hover {
     background-color: rgba(255, 255, 255, 0.8);
   }
-  #mainNav .img-logo {
+  #mainNav .navbar-brand {
     display: block;
     filter: invert(0);
-    transform: scale(2);
+    transform: scale(1.5);
     transform-origin: center !important;
   }
   #mainNav .dropdown-menu {
@@ -12292,13 +12320,15 @@ img::-moz-selection {
     transition: transform 0.2s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.9);
-    margin-top: -20px;
     padding-top: 8px;
     padding-bottom: 0px;
   }
-  #mainNav.is-fixed .img-logo {
+  #mainNav.is-fixed .navbar-brand {
     display: block;
     filter: invert(1);
+  }
+  #mainNav.is-fixed .home-button {
+    display: none;
   }
   #mainNav.is-fixed .navbar-brand {
     color: #212529;
@@ -12341,11 +12371,17 @@ img::-moz-selection {
   }
 }
 @media only screen and (min-width: 1400px) {
-  #mainNav .img-logo {
+  #mainNav .navbar-brand {
     display: block;
     filter: invert(0);
-    transform: scale(1);
+    transform: scale(0.8);
     transform-origin: center !important;
+  }
+  #mainNav .home-button {
+    display: none;
+  }
+  #mainNav.is-fixed {
+    margin-top: -46px;
   }
 }
 
@@ -12428,6 +12464,11 @@ form .form-group:first-child .floating-label-form-group {
   z-index: 2;
 }
 
+.project-title {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
 #subteam-A {
   z-index: 9998;
 }
@@ -12443,6 +12484,7 @@ form .form-group:first-child .floating-label-form-group {
 .accordion-body {
   background-color: rgba(34, 71, 133, 0.3);
   color: white;
+  font-size: large;
 }
 
 .accordion-collapse {
@@ -12456,6 +12498,7 @@ form .form-group:first-child .floating-label-form-group {
 .accordion-button {
   background-color: rgba(23, 49, 95, 0.4);
   color: white;
+  font-size: 1.1rem;
 }
 
 .accordion-button:not(.collapsed) {
@@ -12506,7 +12549,7 @@ footer .copyright {
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .masthead .masthead-heading {
   font-size: 3.25rem;

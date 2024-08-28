@@ -45,9 +45,13 @@
     }
 
     // Logo banner on main page
-    .img-logo {
+    .navbar-brand {
         display: none;
         filter: invert(1);
+    }
+
+    .home-button {
+        display: block;
     }
 
     // Dropdown menu
@@ -139,10 +143,10 @@
         }
         
         // Make logo white on desktop
-        .img-logo {
+        .navbar-brand {
             display: block;
             filter: invert(0);
-            transform: scale(2);
+            transform: scale(1.5);
             transform-origin: center !important;
         }
 
@@ -184,13 +188,16 @@
             transition: transform 0.2s;
             border-bottom: 1px solid darken($white, .05);
             background-color: fade-out($white, .1);
-            margin-top: -20px;
             padding-top: 8px;
             padding-bottom: 0px;
-
-            .img-logo {
+            
+            .navbar-brand {
                 display: block;
                 filter: invert(1);
+            }
+
+            .home-button {
+                display: none;
             }
 
             .navbar-brand {
@@ -254,11 +261,18 @@
     }
 
     @media only screen and (min-width: 1400px) {
-        .img-logo {
+        .navbar-brand {
             display: block;
             filter: invert(0);
-            transform: scale(1);
+            transform: scale(0.8);
             transform-origin: center !important;
+        }
+        .home-button {
+            display: none;
+        }
+
+        &.is-fixed {
+            margin-top: -46px;
         }
     }
 }
