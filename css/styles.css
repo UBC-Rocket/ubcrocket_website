@@ -12051,7 +12051,7 @@ img::-moz-selection {
 }
 
 .home-background {
-  background-image: url("../../assets/backgrounds/bnb.JPG");
+  background-image: url("/assets/backgrounds/bnb.JPG");
   background-color: #212529;
   background-size: cover;
   background-position: center;
@@ -12202,7 +12202,7 @@ img::-moz-selection {
   color: #343a40;
 }
 #mainNav .navbar-nav a.dropdown-item {
-  color: #6c757d;
+  color: #adb5bd;
 }
 #mainNav .navbar-nav > li.nav-item .nav-pill {
   color: #224785;
@@ -12263,7 +12263,7 @@ img::-moz-selection {
     color: rgba(34, 71, 133, 0.8);
   }
   #mainNav .navbar-nav a.dropdown-item {
-    color: #6c757d;
+    color: #ced4da;
   }
   #mainNav .nav-pill {
     display: inline-block;
@@ -12302,7 +12302,7 @@ img::-moz-selection {
     color: #ffffff;
   }
   #mainNav .dropdown-menu .dropdown-item:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.5);
     color: #fff;
   }
 }
@@ -12374,14 +12374,11 @@ img::-moz-selection {
   #mainNav .navbar-brand {
     display: block;
     filter: invert(0);
-    transform: scale(0.8);
-    transform-origin: center !important;
-  }
-  #mainNav .home-button {
-    display: none;
+    transform: scale(0.45);
+    transform-origin: center right !important;
   }
   #mainNav.is-fixed {
-    margin-top: -46px;
+    margin-top: -26px;
   }
 }
 
@@ -12482,7 +12479,7 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 .accordion-body {
-  background-color: rgba(34, 71, 133, 0.3);
+  background-color: rgba(34, 71, 133, 0);
   color: white;
   font-size: large;
 }
@@ -12496,14 +12493,22 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 .accordion-button {
-  background-color: rgba(23, 49, 95, 0.4);
+  background-color: rgba(23, 49, 95, 0);
   color: white;
   font-size: 1.1rem;
 }
 
+.accordion-button.collapsed::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
 .accordion-button:not(.collapsed) {
-  background-color: rgba(34, 71, 133, 0.9);
+  background-color: rgba(34, 71, 133, 0);
   color: white;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .accordion-button:focus {
