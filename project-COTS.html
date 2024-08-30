@@ -53,35 +53,38 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="d-flex w-100">
                         <ul class="navbar-nav me-auto">
-                            <li class="nav-item home-button"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                             <li class="nav-item dropdown dropdown-hover-all">
                                 <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current projects</a>
                                 <div class="dropdown-menu" aria-labelledby="projectsDropdown">
                                     <div class="dropdown dropstart">
-                                        <a class="dropdown-item dropdown-toggle" href="current-projects.html" id="dropdown-A" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">COTS Rocket</a>
+                                        <a class="dropdown-item dropdown-toggle" href="project-COTS.html" id="dropdown-A" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">COTS</a>
                                         <div class="dropdown-menu" aria-labelledby="dropdown-A">
-                                            <a class="dropdown-item" href="current-projects.html#subteam-A">Payloads</a>
-                                            <a class="dropdown-item" href="current-projects.html#subteam-B">Internals</a>
-                                            <a class="dropdown-item" href="current-projects.html#subteam-C">Aerostructures</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-A">Internals</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-B">Aerostructures</a>
+                                            <a class="dropdown-item" href="project-COTS.html">Recovery</a>
+                                            <a class="dropdown-item" href="project-COTS.html">Avionic Software</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-E">Avionic Hardware</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-F">Payloads</a>
                                         </div>
                                     </div>
                                     <!-- <div class="dropdown-divider"></div> -->
                                     <div class="dropdown dropstart">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-B" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project B</a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown-B">
-                                            <a class="dropdown-item" href="#">Payloads</a>
-                                            <a class="dropdown-item" href="#">Internals</a>
-                                            <a class="dropdown-item" href="#">Aerostructures</a>
-                                        </div>
+                                        <a class="dropdown-item" href="project-LRE.html" id="dropdown-B" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Liquid Rocket Engine</a>
+                                        <!-- <div class="dropdown-menu" aria-labelledby="dropdown-B">
+                                            <a class="dropdown-item" href="#">Subteam A</a>
+                                            <a class="dropdown-item" href="#">Subteam B</a>
+                                            <a class="dropdown-item" href="#">Subteam C</a>
+                                        </div> -->
                                     </div>
                                     <div class="dropdown dropstart">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-C" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project C</a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown-C">
-                                            <a class="dropdown-item" href="#">Payloads</a>
-                                            <a class="dropdown-item" href="#">Internals</a>
-                                            <a class="dropdown-item" href="#">Aerostructures</a>
-                                        </div>
+                                        <a class="dropdown-item" href="project-TVR.html" id="dropdown-C" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thrust Vectoring Rocket</a>
+                                        <!-- <div class="dropdown-menu" aria-labelledby="dropdown-C">
+                                            <a class="dropdown-item" href="#">Subteam A</a>
+                                            <a class="dropdown-item" href="#">Subteam B</a>
+                                            <a class="dropdown-item" href="#">Subteam C</a>
+                                        </div> -->
                                     </div>
                                 </div>
                             </li>
@@ -128,16 +131,12 @@
                 <img id="rocket-render" src="./assets/rocket_renders/Garibaldi Photo.107.png" alt="" class="img-fluid min-vh-100">
             </div>
             <img id="rocket-render" src="./assets/rocket_renders/Garibaldi Photo.107.png" alt="" class="img-fluid min-vh-100" style="visibility: hidden;">
-            <footer class="bg-dark py-4 mt-auto">
+            <footer class="bg-dark py-4" style="margin-top: 100px;">
                 <div class="container px-5">
                     <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                        <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
+                        <div class="col-auto"><div class="small m-0 text-white">&copy; UBC Rocket 2024</div></div>
                         <div class="col-auto">
-                            <a class="link-light small" href="#!">Privacy</a>
-                            <span class="text-white mx-1">&middot;</span>
-                            <a class="link-light small" href="#!">Terms</a>
-                            <span class="text-white mx-1">&middot;</span>
-                            <a class="link-light small" href="#!">Contact</a>
+                            <a class="link-light small" href="mailto: hello@ubcrocket.com">Email us at hello@ubcrocket.com</a>
                         </div>
                     </div>
                 </div>
@@ -148,37 +147,37 @@
             <div class="row">
                 <div id="subteam-A" class="p-3 my-2 col col-10 offset-1 col-md-4 offset-md-0 d-flex flex-column justify-content-center align-items-center fade-div rounded" data-offset="0.2" style="scroll-margin-top: 2rem;">
                     <h4 class="text-center">Payloads</h4>
-                    <p class="text-center my-1 fs-5">Our payloads team often design either an engineering demonstration or a scientific experiment. The payload is what you make of it, members have the chance to provide ideas on what to build next and can often choose what type of work they want to do. The entire project often requires simulations, prototyping, testing, and manufacturing. Depending on the chosen project, work could include electrical prototyping, PCB design, microcontroller programming, machining, 3D printing, mechanical design, and even biological or chemical lab work!</p>
+                    <p class="text-center my-1" style="font-size: 1.1rem;">Our payloads team often design either an engineering demonstration or a scientific experiment. The payload is what you make of it, members have the chance to provide ideas on what to build next and can often choose what type of work they want to do. The entire project often requires simulations, prototyping, testing, and manufacturing. Depending on the chosen project, work could include electrical prototyping, PCB design, microcontroller programming, machining, 3D printing, mechanical design, and even biological or chemical lab work!</p>
                 </div>
             </div>
             <div class="row">
                 <div id="subteam-B" class="p-3 my-2 col col-10 offset-1 col-md-4 offset-md-8 d-flex flex-column justify-content-center align-items-center fade-div rounded" data-offset="0.4" style="scroll-margin-top: 2rem;">
                     <h4 class="text-center">Internals</h4>
-                    <p class="text-center my-1 fs-5">The Internals subteam is responsible for designing and manufacturing structures that secure our avionics, payload, propulsion, and recovery systems. In the first half of the year, members focus on designing their models and assemblies using SolidWorks, emphasizing weight reduction and Design for Manufacturing and Assembly (DFMA) principles. In the second half of the year, students learn various manufacturing methods, including manual machining, CNC machining, water jet cutting, and composite layups.</p>
+                    <p class="text-center my-1" style="font-size: 1.1rem;">The Internals subteam is responsible for designing and manufacturing structures that secure our avionics, payload, propulsion, and recovery systems. In the first half of the year, members focus on designing their models and assemblies using SolidWorks, emphasizing weight reduction and Design for Manufacturing and Assembly (DFMA) principles. In the second half of the year, students learn various manufacturing methods, including manual machining, CNC machining, water jet cutting, and composite layups.</p>
                 </div>
             </div>
             <div class="row">
                 <div id="subteam-C" class="p-3 my-2 col col-10 offset-1 col-md-4 offset-md-2 d-flex flex-column justify-content-center align-items-center fade-div rounded" data-offset="0.6" style="scroll-margin-top: 2rem;">
                     <h4 class="text-center">Aerostructures</h4>
-                    <p class="text-center my-1 fs-5">Aerostructures is a manufacturing-heavy subteam. Students will learn how to safely prepare and infuse various fiberglass and carbon fiber composite components, such as bodytubes, fins and a nosecone. The processes we employ require high levels of detail and individuals committed to ensuring the process is right every single time. This is an excellent opportunity for students to be hands-on with rocket fabrication, learn the complexities of aerospace composite materials and become familiar with a plethora of workshop tools.</p>
+                    <p class="text-center my-1" style="font-size: 1.1rem;">Aerostructures is a manufacturing-heavy subteam. Students will learn how to safely prepare and infuse various fiberglass and carbon fiber composite components, such as bodytubes, fins and a nosecone. The processes we employ require high levels of detail and individuals committed to ensuring the process is right every single time. This is an excellent opportunity for students to be hands-on with rocket fabrication, learn the complexities of aerospace composite materials and become familiar with a plethora of workshop tools.</p>
                 </div>
             </div>
             <div class="row">
                 <div id="subteam-D" class="p-3 my-2 col col-10 offset-1 col-md-4 offset-md-7 d-flex flex-column justify-content-center align-items-center fade-div rounded" data-offset="0.8" style="scroll-margin-top: 2rem;">
                     <h4 class="text-center">Avionics Hardware</h4>
-                    <p class="text-center my-1 fs-5">Our team focuses on the full scope of avionics system development for the rocket. We design, build, test, and debug the avionics electronic hardware for the COTS rocket projects. Team members can expect to learn a lot about PCB design, PCB assembly, and electronics testing.</p>
+                    <p class="text-center my-1" style="font-size: 1.1rem;">Our team focuses on the full scope of avionics system development for the rocket. We design, build, test, and debug the avionics electronic hardware for the COTS rocket projects. Team members can expect to learn a lot about PCB design, PCB assembly, and electronics testing.</p>
                 </div>
             </div>
             <div class="row">
                 <div id="subteam-E" class="p-3 my-2 col col-10 offset-1 col-md-4 offset-md-0 d-flex flex-column justify-content-center align-items-center fade-div rounded" data-offset="1.0" style="scroll-margin-top: 2rem;">
                     <h4 class="text-center">Avionics Software & Firmware</h4>
-                    <p class="text-center my-1 fs-5">Students on the software & firmware team are responsible for the digital systems of our 30,000 ft competition rocket. All members will help construct FLARE, the code that powers real-time telemetry collection on the physical rocket in addition to developing Helios, our cutting-edge experimental ground station software. On the firmware side, you'll learn embedded systems programming, sensor integration, and wireless communication protocols. Meanwhile, on the software side, you'll master handling high-speed data streams, creating intuitive interfaces, and applying agile methodologies in a fast-paced engineering environment.</p>
+                    <p class="text-center my-1" style="font-size: 1.1rem;">Students on the software & firmware team are responsible for the digital systems of our 30,000 ft competition rocket. All members will help construct FLARE, the code that powers real-time telemetry collection on the physical rocket in addition to developing Helios, our cutting-edge experimental ground station software. On the firmware side, you'll learn embedded systems programming, sensor integration, and wireless communication protocols. Meanwhile, on the software side, you'll master handling high-speed data streams, creating intuitive interfaces, and applying agile methodologies in a fast-paced engineering environment.</p>
                 </div>
             </div>
             <div class="row">
                 <div id="subteam-F" class="p-3 my-2 col col-10 offset-1 col-md-4 offset-md-8 d-flex flex-column justify-content-center align-items-center fade-div rounded" data-offset="1.2" style="scroll-margin-top: 2rem;">
                     <h4 class="text-center">Recovery</h4>
-                    <p class="text-center my-1 fs-5">Recovery is focused on the production and testing of toroidal and hemispherical parachutes, carbon fiber parachute bays, and black powder charges with the goal of safely retrieving our rockets after launch. Members learn how to the design complex parachutes, fabricate internal recovery bays to house said parachutes, and configure critical deployment sequencing to bring the rocket down gracefully and colorfully. Key skills taught on recovery include detailed sewing techniques, extensive 3D printing, and composite materials manufacturing.</p>
+                    <p class="text-center my-1" style="font-size: 1.1rem;">Recovery is focused on the production and testing of toroidal and hemispherical parachutes, carbon fiber parachute bays, and black powder charges with the goal of safely retrieving our rockets after launch. Members learn how to the design complex parachutes, fabricate internal recovery bays to house said parachutes, and configure critical deployment sequencing to bring the rocket down gracefully and colorfully. Key skills taught on recovery include detailed sewing techniques, extensive 3D printing, and composite materials manufacturing.</p>
                 </div>
             </div>
         </section>
