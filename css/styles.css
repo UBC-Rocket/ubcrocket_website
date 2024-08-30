@@ -12104,6 +12104,7 @@ img::-moz-selection {
   background-color: #052c65;
   color: white;
   text-decoration: none;
+  font-weight: normal;
 }
 .btn-link:hover, .btn-link:focus, .btn-link:active {
   color: #ececec;
@@ -12291,7 +12292,7 @@ img::-moz-selection {
     display: block;
     filter: invert(0);
     transform: scale(1.5);
-    transform-origin: center !important;
+    transform-origin: center right !important;
   }
   #mainNav .dropdown-menu {
     background-color: rgba(0, 0, 0, 0.1);
@@ -12377,7 +12378,7 @@ img::-moz-selection {
     transform-origin: center right !important;
   }
   #mainNav.is-fixed {
-    margin-top: -40px;
+    margin-top: -27px;
   }
 }
 
@@ -12453,7 +12454,7 @@ form .form-group:first-child .floating-label-form-group {
 
 #fade-out {
   position: fixed;
-  top: 25%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: opacity 0.1s ease;
@@ -12461,7 +12462,6 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 .project-title {
-  background-color: rgba(255, 255, 255, 0.3);
   color: white;
 }
 

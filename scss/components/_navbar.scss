@@ -48,6 +48,8 @@
     .navbar-brand {
         display: none;
         filter: invert(1);
+        // transform: scale(0.2);
+        // transform-origin: center center !important;
     }
 
     .home-button {
@@ -147,7 +149,7 @@
             display: block;
             filter: invert(0);
             transform: scale(1.5);
-            transform-origin: center !important;
+            transform-origin: center right !important;
         }
 
         // Dropdown menu for desktop view
@@ -269,7 +271,7 @@
         }
 
         &.is-fixed {
-            margin-top: -40px;
+            margin-top: -27px;
         }
     }
 }
