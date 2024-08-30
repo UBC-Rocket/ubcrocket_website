@@ -12194,6 +12194,9 @@ img::-moz-selection {
   text-transform: uppercase;
   color: #343a40;
 }
+#mainNav .nav-link:focus-visible {
+  box-shadow: none;
+}
 #mainNav .navbar-nav a:not(.btn-social) {
   font-size: 12px;
   font-weight: 800;
@@ -12241,7 +12244,7 @@ img::-moz-selection {
   min-width: 150px;
 }
 #mainNav .dropdown-hover-all .dropdown-menu, #mainNav .dropdown-hover > .dropdown-menu.dropend {
-  margin-left: -1px !important;
+  margin-left: -3px !important;
 }
 @media only screen and (min-width: 992px) {
   #mainNav {

@@ -18,6 +18,10 @@
         color: $gray-800;
     }
 
+    .nav-link:focus-visible {
+        box-shadow: none;
+    }
+
     .navbar-nav {
         a:not(.btn-social) {
             font-size: 12px;
@@ -84,8 +88,12 @@
     .dropdown-menu {
         min-width: 150px;
     }
+
+    // .dropdown-menu[x-out-of-boundaries] {
+    //     transform: translate3d(0px, 60px, 0px) !important;
+    // }
     
-    .dropdown-hover-all .dropdown-menu, .dropdown-hover > .dropdown-menu.dropend { margin-left:-1px !important }
+    .dropdown-hover-all .dropdown-menu, .dropdown-hover > .dropdown-menu.dropend { margin-left:-3px !important }
 
     // Settings for desktop view
     @media only screen and (min-width: 992px) {
@@ -192,7 +200,7 @@
             background-color: fade-out($white, .1);
             padding-top: 8px;
             padding-bottom: 0px;
-            
+
             .navbar-brand {
                 display: block;
                 filter: invert(1);
@@ -250,6 +258,7 @@
             .nav-sponsor:hover {
                 background-color: fade-out(#224785, 0.2)
             }
+
         }
 
         &.is-visible {
