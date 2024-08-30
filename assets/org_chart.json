@@ -2,35 +2,35 @@
     "label": "Faculty Advisor",
     "name": "Dr. Mattison",
     "children": [{
-        "name" : "Jane Smith",
+        "name" : "Kiara Kozak",
         "label": "COTS Project Manager",
         "children": [{
-            "name": "Peter West",
+            "name": "Diba Partovi",
             "label": "Internals Lead"
         }, {
-            "name" : "Sarah Jones",
+            "name" : "Naomi Goizueta-Serrano",
             "label": "Aerostructures Lead"
         }, {
-            "name" : "John Smith",
+            "name" : "Tszkin Charm",
             "label": "Recovery Lead"
         }, {
-            "name" : "Placeholder Name",
+            "name" : "Edward Li",
             "label": "Avionic Software Lead"
         }, {
-            "name" : "Placeholder Name",
+            "name" : "Marcus",
             "label": "Avionic Hardware Lead"
         }, {
-            "name" : "Placeholder Name",
+            "name" : "TBD",
             "label": "Payloads Lead"
         }]
     }, {
-        "name" : "Richard Easton",
+        "name" : "Viki Loncar",
         "label": "Liquid Rocket Project Manager",
         "children": [{
-            "name": "Peter West",
+            "name": "Timothy Cai",
             "label": "Propulsion Lead"
         }, {
-            "name" : "John Smith",
+            "name" : "Placeholder Name",
             "label": "Recovery Lead"
         }, {
             "name" : "Placeholder Name",
@@ -40,13 +40,13 @@
             "label": "Pressure Vessels Lead"
         }]
     }, {
-        "name" : "Alice Ozaltin",
+        "name" : "Richard Helper",
         "label": "Thrust Vectoring Rocket Project Manager",
         "children": [{
-            "name": "Peter West",
+            "name": "Steven Chen",
             "label": "Software Lead"
         }, {
-            "name" : "John Smith",
+            "name" : "Richard Helper",
             "label": "Hardware Lead"
         }]
     }]
