@@ -4,10 +4,10 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     transition: background-image 2s ease-in-out;
     position: relative;
     z-index: 0;
+    height: 100vh;
 }
 
 .home-background::before {
@@ -21,8 +21,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: inherit;
   transition: background-image 2s ease-in-out;
   filter: brightness(50%); /* Add your desired filters here */
   z-index: -1; /* Ensure the filter stays behind the content */
+}
+
+@media only screen and (min-width: 992px) {
+  .home-background {
+    background-attachment: fixed;
+  }
 }
