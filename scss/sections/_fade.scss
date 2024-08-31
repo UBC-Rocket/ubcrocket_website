@@ -9,7 +9,7 @@
 
 .img-container {
     position: absolute;
-    margin-top: 10vh;
+    margin-top: 40vh;
     min-width: 100%;
     max-width: 100%;
     object-fit: cover;
@@ -18,11 +18,13 @@
 
 #fade-out {
     position: fixed;
-    top: 35%;
+    top: 5%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     transition: opacity 0.1s ease;
     z-index: 2;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 .project-title {
@@ -40,4 +42,10 @@
 
 #subteam-C {
     z-index: 9998;
+}
+
+@media only screen and (min-width: 1200px) {
+    #fade-out {
+        z-index: 0;
+    }
 }

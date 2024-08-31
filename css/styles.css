@@ -12452,7 +12452,7 @@ form .form-group:first-child .floating-label-form-group {
 
 .img-container {
   position: absolute;
-  margin-top: 10vh;
+  margin-top: 40vh;
   min-width: 100%;
   max-width: 100%;
   -o-object-fit: cover;
@@ -12462,11 +12462,13 @@ form .form-group:first-child .floating-label-form-group {
 
 #fade-out {
   position: fixed;
-  top: 35%;
+  top: 5%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   transition: opacity 0.1s ease;
   z-index: 2;
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .project-title {
@@ -12485,6 +12487,11 @@ form .form-group:first-child .floating-label-form-group {
   z-index: 9998;
 }
 
+@media only screen and (min-width: 1200px) {
+  #fade-out {
+    z-index: 0;
+  }
+}
 .accordion-body {
   background-color: rgba(34, 71, 133, 0);
   color: white;
