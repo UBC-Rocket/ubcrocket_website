@@ -35,15 +35,6 @@
                 "children": [{
                     "name": "Timothy Cai",
                     "label": "Propulsion Lead"
-                }, {
-                    "name" : "Placeholder Name",
-                    "label": "Recovery Lead"
-                }, {
-                    "name" : "Placeholder Name",
-                    "label": "Propulsion Testing Lead"
-                }, {
-                    "name" : "Placeholder Name",
-                    "label": "Pressure Vessels Lead"
                 }]
             }, {
                 "name" : "Richard Helper",
