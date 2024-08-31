@@ -2,11 +2,11 @@
     "label": "Faculty Advisor",
     "name": "Dr. Mattison",
     "children": [{
-        "name" : "Placeholder Name",
-        "label": "Captain 1",
+        "name" : "Viki Loncar",
+        "label": "Co-Captain",
         "children": [{
-            "name": "Placeholder Name",
-            "label": "Captain 2",
+            "name": "Taher Kathawala",
+            "label": "Co-Captain",
             "children": [{
                 "name" : "Kiara Kozak",
                 "label": "COTS Project Manager",
