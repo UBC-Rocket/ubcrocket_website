@@ -12182,6 +12182,12 @@ img::-moz-selection {
      object-fit: cover;
 }
 
+.img-leadership {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
