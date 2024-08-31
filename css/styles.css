@@ -12483,15 +12483,27 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 #subteam-A {
-  z-index: 9998;
+  z-index: 1020;
 }
 
 #subteam-B {
-  z-index: 9998;
+  z-index: 1020;
 }
 
 #subteam-C {
-  z-index: 9998;
+  z-index: 1020;
+}
+
+#subteam-D {
+  z-index: 1020;
+}
+
+#subteam-E {
+  z-index: 1020;
+}
+
+#subteam-F {
+  z-index: 1020;
 }
 
 @media only screen and (min-width: 1200px) {
