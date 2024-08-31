@@ -7,13 +7,13 @@
         <meta name="author" content="" />
         <title>UBC Rocket - Home</title>
         <!-- Preload images -->
-        <!-- <link rel="preload" href="./assets/backgrounds/skypilot-min.webp" as="image">
+        <link rel="preload" href="./assets/backgrounds/skypilot-min.webp" as="image">
         <link rel="preload" href="./assets/backgrounds/bnb-min.webp" as="image">
         <link rel="preload" href="./assets/backgrounds/garibaldi-min.webp" as="image">
         <link rel="preload" href="./assets/backgrounds/hotfire1-min.webp" as="image">
         <link rel="preload" href="./assets/backgrounds/hotfire2-min.webp" as="image">
         <link rel="preload" href="./assets/backgrounds/hotfire3-min.webp" as="image">
-        <link rel="preload" href="./assets/backgrounds/silvertip-min.webp" as="image"> -->
+        <link rel="preload" href="./assets/backgrounds/silvertip-min.webp" as="image">
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Fonts -->
@@ -273,25 +273,25 @@
         <script src="js/scripts2.js"></script>
         <!-- Registration text script -->
         <script>
-            // document.addEventListener("DOMContentLoaded", function () {
-            //     const images = [
-            //     './assets/backgrounds/skypilot-min.webp',
-            //     './assets/backgrounds/bnb-min.webp',
-            //     './assets/backgrounds/garibaldi-min.webp',
-            //     './assets/backgrounds/hotfire1-min.webp',
-            //     './assets/backgrounds/hotfire2-min.webp',
-            //     './assets/backgrounds/hotfire3-min.webp',
-            //     './assets/backgrounds/silvertip-min.webp'
-            //     ];
+            document.addEventListener("DOMContentLoaded", function () {
+                const images = [
+                './assets/backgrounds/skypilot-min.webp',
+                './assets/backgrounds/bnb-min.webp',
+                './assets/backgrounds/garibaldi-min.webp',
+                './assets/backgrounds/hotfire1-min.webp',
+                './assets/backgrounds/hotfire2-min.webp',
+                './assets/backgrounds/hotfire3-min.webp',
+                './assets/backgrounds/silvertip-min.webp'
+                ];
 
-            //     let currentIndex = 0;
-            //     const changeBackground = () => {
-            //     currentIndex = (currentIndex + 1) % images.length;
-            //     document.querySelector(".home-background").style.backgroundImage = `url('${images[currentIndex]}')`;
-            //     };
+                let currentIndex = 0;
+                const changeBackground = () => {
+                currentIndex = (currentIndex + 1) % images.length;
+                document.querySelector(".home-background").style.backgroundImage = `url('${images[currentIndex]}')`;
+                };
 
-            //     setInterval(changeBackground, 15000); // Change every 15 seconds
-            // });
+                setInterval(changeBackground, 15000); // Change every 15 seconds
+            });
 
             fetch('./assets/config.json')
                 .then(response => response.json())
