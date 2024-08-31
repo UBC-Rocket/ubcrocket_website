@@ -12469,7 +12469,7 @@ form .form-group:first-child .floating-label-form-group {
 
 #fade-out {
   position: fixed;
-  top: 5%;
+  top: 8%;
   left: 50%;
   transform: translate(-50%, 0%);
   transition: opacity 0.1s ease;
