@@ -1,5 +1,10 @@
 /* OrgChart Styling */
 
+:root {
+  /* Width of the node is double this number */
+  --node-width-half: 70px;
+}
+
 .node-label {
   font-size: smaller;
 }
@@ -11,7 +16,7 @@
 }
 
 .org-tree .node {
-  width: 140px;
+  width: calc(var(--node-width-half) * 2);
   padding: 15px;
   border: 2px solid #aaa;
   border-radius: 3px;
@@ -93,7 +98,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px;
   }
   .org-tree .child-width-1 .item > .child .node:not(.root)::after {
@@ -103,7 +108,7 @@
     width: 10px;
     height: 2px;
     top: calc(50%);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
   }
   .org-tree .child-width-1 .item:last-child:not(:only-child) > .child .node:not(.root)::before {
     height: calc(50% + 2px);
@@ -114,7 +119,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px;
     height: calc(50% + 10px + 2px);
     top: -11px;
@@ -135,7 +140,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px;
     height: calc(100% + 30px + 2px);
     top: -11px;
@@ -146,7 +151,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px;
   }
   .org-tree .child-width-1 .parent {
@@ -157,10 +162,10 @@
     content: '';
     position: absolute;
     background-color: #aaa;
-    width: 70px;
+    width: var(--node-width-half);
     height: 2px;
     bottom: -10px;
-    left: calc(50% - 70px);
+    left: calc(50% - var(--node-width-half));
   }
 }
 
@@ -175,7 +180,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px;
   }
   .org-tree .child-width-1 .item > .child .node:not(.root)::after {
@@ -185,7 +190,7 @@
     width: 10px;
     height: 2px;
     top: calc(50%);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
   }
   .org-tree .child-width-1 .item:last-child:not(:only-child) > .child .node:not(.root)::before {
     height: calc(50% + 2px);
@@ -196,7 +201,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px;
     height: calc(50% + 10px + 2px);
     top: -11px;
@@ -217,7 +222,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px;
     height: calc(100% + 30px + 2px);
     top: -11px;
@@ -228,7 +233,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px;
   }
   .org-tree .child-width-1 .parent {
@@ -239,10 +244,10 @@
     content: '';
     position: absolute;
     background-color: #aaa;
-    width: 70px;
+    width: var(--node-width-half);
     height: 2px;
     bottom: -10px;
-    left: calc(50% - 70px);
+    left: calc(50% - var(--node-width-half));
   }
 }
 
@@ -255,7 +260,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px; }
   .org-tree .child-width-1 .item > .child .node:not(.root)::after {
     content: '';
@@ -264,7 +269,7 @@
     width: 10px;
     height: 2px;
     top: calc(50%);
-    left: calc(50% - 70px - 10px); }
+    left: calc(50% - var(--node-width-half) - 10px); }
   .org-tree .child-width-1 .item:last-child:not(:only-child) > .child .node:not(.root):before {
     height: calc(50% + 2px); }
   .org-tree .child-width-1 .item:only-child > .child .node:not(.root):before {
@@ -273,7 +278,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px;
     height: calc(50% + 10px + 2px);
     top: -11px; }
@@ -290,7 +295,7 @@
       background-color: #aaa;
       width: 2px;
       height: calc(100% + 20px + 2px);
-      left: calc(50% - 70px - 10px);
+      left: calc(50% - var(--node-width-half) - 10px);
       top: -1px;
       height: calc(100% + 30px + 2px);
       top: -11px; }
@@ -300,7 +305,7 @@
       background-color: #aaa;
       width: 2px;
       height: calc(100% + 20px + 2px);
-      left: calc(50% - 70px - 10px);
+      left: calc(50% - var(--node-width-half) - 10px);
       top: -1px; }
   .org-tree .child-width-1 .parent {
     margin-bottom: 0px;
@@ -309,10 +314,10 @@
       content: '';
       position: absolute;
       background-color: #aaa;
-      width: 70px;
+      width: var(--node-width-half);
       height: 2px;
       bottom: -10px;
-      left: calc(50% - 70px); }
+      left: calc(50% - var(--node-width-half)); }
   .org-tree .child-width-2 .item > .child:before, .org-tree .child-width-2 .item > .child:after {
     display: none; }
   .org-tree .child-width-2 .item > .child .node:not(.root):before {
@@ -321,7 +326,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px; }
   .org-tree .child-width-2 .item > .child .node:not(.root)::after {
     content: '';
@@ -330,7 +335,7 @@
     width: 10px;
     height: 2px;
     top: calc(50%);
-    left: calc(50% - 70px - 10px); }
+    left: calc(50% - var(--node-width-half) - 10px); }
   .org-tree .child-width-2 .item:last-child:not(:only-child) > .child .node:not(.root):before {
     height: calc(50% + 2px); }
   .org-tree .child-width-2 .item:only-child > .child .node:not(.root):before {
@@ -339,7 +344,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px;
     height: calc(50% + 10px + 2px);
     top: -11px; }
@@ -356,7 +361,7 @@
       background-color: #aaa;
       width: 2px;
       height: calc(100% + 20px + 2px);
-      left: calc(50% - 70px - 10px);
+      left: calc(50% - var(--node-width-half) - 10px);
       top: -1px;
       height: calc(100% + 30px + 2px);
       top: -11px; }
@@ -366,7 +371,7 @@
       background-color: #aaa;
       width: 2px;
       height: calc(100% + 20px + 2px);
-      left: calc(50% - 70px - 10px);
+      left: calc(50% - var(--node-width-half) - 10px);
       top: -1px; }
   .org-tree .child-width-2 .parent {
     margin-bottom: 0px;
@@ -375,10 +380,10 @@
       content: '';
       position: absolute;
       background-color: #aaa;
-      width: 70px;
+      width: var(--node-width-half);
       height: 2px;
       bottom: -10px;
-      left: calc(50% - 70px); }
+      left: calc(50% - var(--node-width-half)); }
   .org-tree .child-width-3 .item > .child:before, .org-tree .child-width-3 .item > .child:after {
     display: none; }
   .org-tree .child-width-3 .item > .child .node:not(.root):before {
@@ -387,7 +392,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px; }
   .org-tree .child-width-3 .item > .child .node:not(.root)::after {
     content: '';
@@ -396,7 +401,7 @@
     width: 10px;
     height: 2px;
     top: calc(50%);
-    left: calc(50% - 70px - 10px); }
+    left: calc(50% - var(--node-width-half) - 10px); }
   .org-tree .child-width-3 .item:last-child:not(:only-child) > .child .node:not(.root):before {
     height: calc(50% + 2px); }
   .org-tree .child-width-3 .item:only-child > .child .node:not(.root):before {
@@ -405,7 +410,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px;
     height: calc(50% + 10px + 2px);
     top: -11px; }
@@ -422,7 +427,7 @@
       background-color: #aaa;
       width: 2px;
       height: calc(100% + 20px + 2px);
-      left: calc(50% - 70px - 10px);
+      left: calc(50% - var(--node-width-half) - 10px);
       top: -1px;
       height: calc(100% + 30px + 2px);
       top: -11px; }
@@ -432,7 +437,7 @@
       background-color: #aaa;
       width: 2px;
       height: calc(100% + 20px + 2px);
-      left: calc(50% - 70px - 10px);
+      left: calc(50% - var(--node-width-half) - 10px);
       top: -1px; }
   .org-tree .child-width-3 .parent {
     margin-bottom: 0px;
@@ -441,10 +446,10 @@
       content: '';
       position: absolute;
       background-color: #aaa;
-      width: 70px;
+      width: var(--node-width-half);
       height: 2px;
       bottom: -10px;
-      left: calc(50% - 70px); }
+      left: calc(50% - var(--node-width-half)); }
   .org-tree .child-width-4 .item > .child:before, .org-tree .child-width-4 .item > .child:after {
     display: none; }
   .org-tree .child-width-4 .item > .child .node:not(.root):before {
@@ -453,7 +458,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px; }
   .org-tree .child-width-4 .item > .child .node:not(.root)::after {
     content: '';
@@ -462,7 +467,7 @@
     width: 10px;
     height: 2px;
     top: calc(50%);
-    left: calc(50% - 70px - 10px); }
+    left: calc(50% - var(--node-width-half) - 10px); }
   .org-tree .child-width-4 .item:last-child:not(:only-child) > .child .node:not(.root):before {
     height: calc(50% + 2px); }
   .org-tree .child-width-4 .item:only-child > .child .node:not(.root):before {
@@ -471,7 +476,7 @@
     background-color: #aaa;
     width: 2px;
     height: calc(100% + 20px + 2px);
-    left: calc(50% - 70px - 10px);
+    left: calc(50% - var(--node-width-half) - 10px);
     top: -1px;
     height: calc(50% + 10px + 2px);
     top: -11px; }
@@ -488,7 +493,7 @@
       background-color: #aaa;
       width: 2px;
       height: calc(100% + 20px + 2px);
-      left: calc(50% - 70px - 10px);
+      left: calc(50% - var(--node-width-half) - 10px);
       top: -1px;
       height: calc(100% + 30px + 2px);
       top: -11px; }
@@ -498,7 +503,7 @@
       background-color: #aaa;
       width: 2px;
       height: calc(100% + 20px + 2px);
-      left: calc(50% - 70px - 10px);
+      left: calc(50% - var(--node-width-half) - 10px);
       top: -1px; }
   .org-tree .child-width-4 .parent {
     margin-bottom: 0px;
@@ -507,9 +512,9 @@
       content: '';
       position: absolute;
       background-color: #aaa;
-      width: 70px;
+      width: var(--node-width-half);
       height: 2px;
       bottom: -10px;
-      left: calc(50% - 70px); } }
+      left: calc(50% - var(--node-width-half)); } }
 
 /*# sourceMappingURL=orgchart.css.map */

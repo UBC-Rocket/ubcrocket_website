@@ -12312,15 +12312,12 @@ img::-moz-selection {
     transform: scale(1.5);
     transform-origin: center right !important;
   }
-  #mainNav .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
   #mainNav .dropdown-menu .dropdown-item {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
   }
   #mainNav .dropdown-menu .dropdown-item:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.85);
     color: #fff;
   }
 }
