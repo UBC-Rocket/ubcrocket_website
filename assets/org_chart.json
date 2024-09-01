@@ -34,8 +34,8 @@
                 "label": "Propulsion Lead"
             }]
         }, {
-            "name" : "Richard Helper /\n Steven Chen",
-            "label": "Thrust Vectoring Rocket Project Manager",
+            "name" : "Richard Helper & Steven Chen/\n Steven Chen",
+            "label": "Thrust Vectoring Rocket Project Managers",
             "children": [{
                 "name": "Steven Chen",
                 "label": "Software Lead"
