@@ -2,50 +2,46 @@
     "label": "Faculty Advisor",
     "name": "Dr. Mattison",
     "children": [{
-        "name" : "Viki Loncar",
+        "name": "Viki Loncar /\n Taher Kathawala",
         "label": "Co-Captain",
         "children": [{
-            "name": "Taher Kathawala",
-            "label": "Co-Captain",
+            "name" : "Kiara Kozak",
+            "label": "COTS Project Manager",
             "children": [{
-                "name" : "Kiara Kozak",
-                "label": "COTS Project Manager",
-                "children": [{
-                    "name": "Diba Partovi",
-                    "label": "Internals Lead"
-                }, {
-                    "name" : "Naomi Goizueta-Serrano",
-                    "label": "Aerostructures Lead"
-                }, {
-                    "name" : "Tszkin Charm",
-                    "label": "Recovery Lead"
-                }, {
-                    "name" : "Edward Li",
-                    "label": "Avionics Software Lead"
-                }, {
-                    "name" : "Marcus Cheng",
-                    "label": "Avionics Hardware Lead"
-                }, {
-                    "name" : "TBD",
-                    "label": "Payloads Lead"
-                }]
+                "name": "Diba Partovi",
+                "label": "Internals Lead"
             }, {
-                "name" : "Viki Loncar",
-                "label": "Liquid Rocket Project Manager",
-                "children": [{
-                    "name": "Timothy Cai",
-                    "label": "Propulsion Lead"
-                }]
+                "name" : "Naomi Goizueta-Serrano /\n Nathan Lock",
+                "label": "Aerostructures Lead"
+            }, {
+                "name" : "Tszkin Charm",
+                "label": "Recovery Lead"
+            }, {
+                "name" : "Edward Li",
+                "label": "Avionics Software Lead"
+            }, {
+                "name" : "Marcus Cheng",
+                "label": "Avionics Hardware Lead"
+            }, {
+                "name" : "TBD",
+                "label": "Payloads Lead"
+            }]
+        }, {
+            "name" : "Viki Loncar",
+            "label": "Liquid Rocket Project Manager",
+            "children": [{
+                "name": "Timothy Cai",
+                "label": "Propulsion Lead"
+            }]
+        }, {
+            "name" : "Richard Helper /\n Steven Chen",
+            "label": "Thrust Vectoring Rocket Project Manager",
+            "children": [{
+                "name": "Steven Chen",
+                "label": "Software Lead"
             }, {
                 "name" : "Richard Helper",
-                "label": "Thrust Vectoring Rocket Project Manager",
-                "children": [{
-                    "name": "Steven Chen",
-                    "label": "Software Lead"
-                }, {
-                    "name" : "Richard Helper",
-                    "label": "Hardware Lead"
-                }]
+                "label": "Hardware Lead"
             }]
         }]
     }]
