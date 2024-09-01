@@ -12469,7 +12469,7 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 #fade-out {
-  position: fixed;
+  position: absolute;
   top: 8%;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -12510,6 +12510,7 @@ form .form-group:first-child .floating-label-form-group {
 @media only screen and (min-width: 1200px) {
   #fade-out {
     z-index: 0;
+    position: fixed;
   }
 }
 .accordion-body {
