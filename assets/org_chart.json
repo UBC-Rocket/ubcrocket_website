@@ -2,7 +2,7 @@
     "label": "Faculty Advisor",
     "name": "Dr. Mattison",
     "children": [{
-        "name": "Viki Loncar /\n Taher Kathawala",
+        "name": "Viki Loncar &\n Taher Kathawala",
         "label": "Co-Captain",
         "children": [{
             "name" : "Kiara Kozak",
@@ -11,7 +11,7 @@
                 "name": "Diba Partovi",
                 "label": "Internals Lead"
             }, {
-                "name" : "Naomi Goizueta-Serrano /\n Nathan Lock",
+                "name" : "Naomi Goizueta-Serrano &\n Nathan Lock",
                 "label": "Aerostructures Lead"
             }, {
                 "name" : "Tszkin Charm",
@@ -34,7 +34,7 @@
                 "label": "Propulsion Lead"
             }]
         }, {
-            "name" : "Richard Helper & Steven Chen/\n Steven Chen",
+            "name" : "Richard Helper &\n Steven Chen",
             "label": "Thrust Vectoring Rocket Project Managers",
             "children": [{
                 "name": "Steven Chen",
