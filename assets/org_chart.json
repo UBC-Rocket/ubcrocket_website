@@ -3,7 +3,7 @@
     "name": "Dr. Mattison",
     "children": [{
         "name": "Viki Loncar &\n Taher Kathawala",
-        "label": "Co-Captain",
+        "label": "Co-Captains",
         "children": [{
             "name" : "Kiara Kozak",
             "label": "COTS Project Manager",
@@ -12,7 +12,7 @@
                 "label": "Internals Lead"
             }, {
                 "name" : "Naomi Goizueta-Serrano &\n Nathan Lock",
-                "label": "Aerostructures Lead"
+                "label": "Aerostructures Leads"
             }, {
                 "name" : "Tszkin Charm",
                 "label": "Recovery Lead"
