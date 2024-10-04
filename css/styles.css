@@ -12187,7 +12187,8 @@ img::-moz-selection {
 }
 
 .img-leadership {
-  height: 200px;
+  max-height: 200px;
+  max-width: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
