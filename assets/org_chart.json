@@ -6,7 +6,7 @@
         "label": "Co-Captains",
         "children": [{
             "name" : "Kiara Kozak &\n Diba Partovi",
-            "label": "COTS Project Manager",
+            "label": "COTS Project Managers",
             "children": [{
                 "name": "Diba Partovi",
                 "label": "Internals Lead"
