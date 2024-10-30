@@ -11,6 +11,9 @@
 /* The actual timeline (the vertical ruler) */
 .main-timeline-2 {
   position: relative;
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  align-items: center; /* Center the timeline */
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -30,6 +33,7 @@
   position: relative;
   background-color: inherit;
   width: 50%;
+  margin-bottom: -20%;
 }
 
 /* The circles on the timeline */
@@ -49,12 +53,14 @@
 .left-2 {
   padding: 0px 40px 20px 0px;
   left: 0;
+  align-self: flex-start;
 }
 
 /* Place the container to the right */
 .right-2 {
   padding: 0px 0px 20px 40px;
   left: 50%;
+  align-self: flex-start;
 }
 
 /* Add arrows to the left container (pointing right) */
