@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>UBC Rocket - FAQ</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Custom theme CSS (includes Bootstrap)-->
+        <link href="./css/styles.css" rel="stylesheet" />
+    </head>
+<body style="background-color: #212529;">
+    <main class="d-flex flex-column min-vh-100">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <!-- Align brand to the left -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/ubcrocket_logo_white_long.png" alt="..." class="img-fluid img-logo">
+                </a>
+                <div class="ms-auto d-block d-md-none">
+                    <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a> -->
+                    <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <!-- Toggler button for mobile view -->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- Navbar items -->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <div class="d-flex w-100">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item dropdown dropdown-hover dropdown-hover-all">
+                                <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current projects</a>
+                                <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item dropdown-toggle" href="project-COTS.html" id="dropdown-A" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">COTS</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-A">
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-A">Payloads</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-B">Internals</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-C">Aerostructures</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-D">Avionics Hardware</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-E">Avionics Software</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-F">Recovery</a>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="dropdown-divider"></div> -->
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="project-LRE.html" id="dropdown-B" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Liquid Rocket Engine</a>
+                                        <!-- <div class="dropdown-menu" aria-labelledby="dropdown-B">
+                                            <a class="dropdown-item" href="#">Subteam A</a>
+                                            <a class="dropdown-item" href="#">Subteam B</a>
+                                            <a class="dropdown-item" href="#">Subteam C</a>
+                                        </div> -->
+                                    </div>
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="project-TVR.html" id="dropdown-C" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thrust Vectoring Rocket</a>
+                                        <!-- <div class="dropdown-menu" aria-labelledby="dropdown-C">
+                                            <a class="dropdown-item" href="#">Subteam A</a>
+                                            <a class="dropdown-item" href="#">Subteam B</a>
+                                            <a class="dropdown-item" href="#">Subteam C</a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
+                            <li class="nav-item dropdown dropdown-hover dropdown-hover-all">
+                                <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                                <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="faq.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQ</a>
+                                    </div>
+                                    <!-- <div class="dropdown-divider"></div> -->
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="past-projects.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Past Projects</a>
+                                    </div>
+                                    <!-- <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="project-TVR.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+                                    </div> -->
+                                </div>
+                            </li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li> -->
+                            <li class="nav-item"><a class="nav-link nav-pill nav-sponsor d-block d-md-none" href="index.html#sponsors">Sponsor Us</a></li>
+                            <li class="nav-item"><a id="joinUsMobile" class="nav-link nav-pill d-block d-md-none" href="index.html#join-us">Join Us</a></li>
+                        </ul>
+                        <!-- Desktop view -->
+                        <ul class="navbar-nav ms-auto d-none d-md-flex">
+                            <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <!-- <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a> -->
+                            <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <li class="nav-item"><a class="nav-link mx-2 nav-pill nav-sponsor" href="index.html#sponsors">Sponsor Us</a></li>
+                            <li class="nav-item"><a id="joinUsDesktop" class="nav-link mx-2 nav-pill" href="index.html#join-us">Join Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="py-2 bg-dark">
+            <div class="container px-5 mt-5 text-light">
+                <h1 class="text-uppercase">Past Projects</h2>
+                <p>Since 2016, UBC Rocket has launched 12 rockets at competitions in both Canada and the United States. We have also launched a couple of Christmas trees.</p>
+            </div>
+        </section>
+        
+        <!-- Team Statistics -->
+        <div class="d-flex flex-column justify-content-center align-items-center bg-dark mb-5">
+            <h3 class="text-white">Team Statistics</h3>
+            <div class="bg-dark px-3 border border-white border-4 text-white text-center d-flex justify-content-center align-items-center" style="max-width: 50%; max-height: 50%;">
+                <p>
+                    <b>Rockets recovered (flight ready): </b>12 <br>
+                    <b>Rockets recovered (obliterated): </b>1 <br>
+                    <b>Christmas trees launched: </b>2 <br>
+                    <b>Christmas trees recovered: </b>0 <br>
+                    <b>Rockets launched: </b>13 <br>
+                    <b>Competitions attended: </b>11+ <br>
+                    <b>Members: </b>90+
+                </p>
+            </div>
+        </div>
+        <!-- Timeline section -->
+        <section style="background-color: #212529;">
+            <div class="container">
+                <div class="main-timeline-2">
+                <div class="timeline-2 left-2">
+                    <div class="card">
+                    <img src="/assets/team_pictures/Cypress.jpg" class="card-img-top"
+                        alt="Responsive image">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">CYPRESS - 10K Single Stage</h4>
+                        <div class="d-flex align-items-center mb-4">
+                            <p class="text-muted mb-0"><i class="fa-solid fa-calendar-days"></i> 2017</p>
+                            <img src="assets/backgrounds/original/Cypress mission patch-01.png" alt="" class="ms-auto" style="height: 64px; width: 64px;">
+                        </div>
+                        <p class="mb-0">Cypress was UBC Rocket’s very first competition rocket, with the goal of testing various student-designed modules for future projects. The rocket payload was a modular CubeSAT frame, carrying 3 high school designed CubeSAT units in addition to a camera and various specialized sensors. This was also the first time the team tested various parachute patterns in the campus wind tunnel. Cypress competed in the 2017 Spaceport Amercia Cup and received 1st place in the 10,000ft. Commercial-Off-The-Shelf category, beating out legacy names such as MIT and Caltech!</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="timeline-2 right-2">
+                    <div class="card">
+                    <img src="assets/team_pictures/Blacktusk.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">Blacktusk - 30k Single Stage</h4>
+                        <div class="d-flex align-items-center mb-4">
+                            <p class="text-muted mb-0"><i class="fa-solid fa-calendar-days"></i> 2018</p>
+                            <img src="assets/backgrounds/original/Black Tusk Mission Patch.png" alt="" class="ms-auto" style="height: 64px; width: 64px;">
+                        </div>
+                        <p class="mb-0">Black Tusk was our first attempt at going supersonic using a N-Class motor. We aimed for a minimum diameter rocket to reduce mass and drag that could make it to 30,000 feet on one stage. The CubeSATs that are normally the payload were shrunk down to become PicoSATs to fit inside the rocket. Unfortunately, the rocket had a rapid unscheduled disassembly (RUD) at maximum dynamic pressure (MAXQ) during flight and broke in half.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="timeline-2 left-2">
+                    <div class="card">
+                    <img src="/assets/team_pictures/hollyburn.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">Hollyburn - 10k Single Stage</h4>
+                        <div class="d-flex align-items-center mb-4">
+                            <p class="text-muted mb-0"><i class="fa-solid fa-calendar-days"></i> 2019</p>
+                            <img src="assets/backgrounds/original/Cypress-Hollyburn mission patch 2018.svg" alt="" class="ms-auto" style="height: 64px; width: 64px;">
+                        </div>
+                        <p class="mb-0">Hollyburn was an ambitious initiative with the goals of to designing, manufacturing and launching a single stage, 10,000 ft rocket constructed by a team of 1st and 2nd year students in UBC Rocket. The payload comprised of 3 cubeSATs, which were constructed in coordination with two local high schools. Aberdeen High school developed a video surveillance camera device and the Lord Byng team designed a device to test the strength of graphene under 6.74 G of acceleration. Originally scheduled for a 2019 launch in Alberta, smoke from forest fires cancelled this launch and the 2020 & 2021 launches. As a result, Hollyburn never had the opportunity to fly.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="timeline-2 right-2">
+                    <div class="card">
+                    <img src="/assets/team_pictures/Skypilot.JPG" class="card-img-top"
+                        alt="...">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">SkyPilot - 30k Single Stage</h4>
+                        <div class="d-flex align-items-center mb-4">
+                            <p class="text-muted mb-0"><i class="fa-solid fa-calendar-days"></i> 2019</p>
+                            <img src="assets/backgrounds/original/Skypilot mission patch.jpg" alt="" class="ms-auto" style="height: 64px; width: 64px;">
+                        </div>
+                        <p class="mb-0">Skypilot was a single stage, 74lb rocket designed to compete in the 30,000 ft COTS category using an N3301 motor. The separation mechanism included a black powder & a CO2 based mechanism, both fully student researched and designed. A student-designed Quadcopter ejected from the rocket at apogee was Skypilot’s original payload, however due to time constraints, it was converted into a 360-degree camera. Skypilot was successfully recovered at IREC 2019 and now guards the rocket lab with a watchful eye.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="timeline-2 left-2">
+                    <div class="card">
+                    <img src="/assets/team_pictures/Co-pilot static engine.JPG" class="card-img-top"
+                        alt="Responsive image">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">Co-Pilot - 30k Single Stage (no photo yet)</h4>
+                        <div class="d-flex align-items-center mb-4">
+                            <p class="text-muted mb-0"><i class="fa-solid fa-calendar-days"></i> 2019</p>
+                            <img src="assets/backgrounds/original/Copilot Transparent.png" alt="" class="ms-auto" style="height: 64px; width: 64px;">
+                        </div>
+                        <p class="mb-0">The Copilot project was an experimental SRAD liquid rocket engine that would be compatible with Sky Pilot’s upper assembly. The Co-pilot motor was designed to produce 4000N peak thrust over 5 seconds using a mixture of LOX & kerosene and ignited using a C-Class rocket motor. The final liquid motor design ultimately became too heavy for the thrust it produced, however, the hotfires associated with Co-pilot gave valuable data on the effectiveness of MDF as an ablative. The current Liquid Rocket project still uses the Co-pilot engine for tests involving optimized injector design and advances in heatsink frameworks. </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="timeline-2 right-2">
+                    <div class="card">
+                    <img src="/assets/team_pictures/Tantulus.jpg" class="card-img-top"
+                        alt="Responsive image">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">Tatulus - 30k Two-Stage </h4>
+                        <div class="d-flex align-items-center mb-4">
+                            <p class="text-muted mb-0"><i class="fa-solid fa-calendar-days"></i> 2019</p>
+                            <img src="assets/backgrounds/original/Tantalus Transparent.png" alt="" class="ms-auto" style="height: 64px; width: 64px;">
+                        </div>
+                        <p class="mb-0">Tantalus was UBC Rocket's first two-stage solid motor rocket. The project began in 2019, with the goal of reaching an altitude of 30,000 feet. Unfortunately, the COVID-19 pandemic resulted in the cancellation of what was to be the first Launch Canada competition in 2020, as well as the halting of any in-person manufacturing activities. Undeterred, the team continued to refine and maintain both the design and dream through truly trying circumstances.
+
+After three long years, Tantalus finally flew at the inaugural Launch Canada in 2022, in Cochrane, Ontario. Weighing in at ~50 kgs and ~12.5 feet tall, Tantalus became the first multistage rocket to be launched at a Canadian rocketry competition, winning second place in the Advanced Launch category and setting the stage for the team to push the boundaries of student aerospace engineering even further. </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="timeline-2 left-2">
+                    <div class="card">
+                    <img src="/assets/team_pictures/Silvertip.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">Silvertip - 30k Single Stage </h4>
+                        <div class="d-flex align-items-center mb-4">
+                            <p class="text-muted mb-0"><i class="fa-solid fa-calendar-days"></i> 2020</p>
+                            <img src="assets/backgrounds/original/white backround.png" alt="" class="ms-auto" style="height: 64px; width: 64px;">
+                        </div>
+                        <p class="mb-0">Silvertip was one of our most exciting rockets to produce; it competed in the 30k COTS category at the Spaceport America cup in 2022. One of the most prominent components was the design shift away from maximizing altitude to production. A major challenges creating the rocket was the short 2-month design and build cycle. This led to modifications like a 3d-printed boattail but still included previous design ideas such as a replaceable fin rig (commonly our team mounts the fins directly onto the inner motor tube making replacement challenging). </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="timeline-2 right-2">
+                    <div class="card">
+                    <img src="/assets/team_pictures/Beauty & the Beast.jpg" class="card-img-top"
+                        alt="Responsive image">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">Beauty & the Beast - 30k Two-Stage </h4>
+                        <div class="d-flex align-items-center mb-4">
+                            <p class="text-muted mb-0"><i class="fa-solid fa-calendar-days"></i> 2022</p>
+                            <img src="assets/backgrounds/original/B&B mission patch V3.png" alt="" class="ms-auto" style="height: 64px; width: 64px;">
+                        </div>
+                        <p class="mb-0">‘Beauty & the Beast’ was UBCR’s first two-stage rocket to achieve a nominal stage-separated flight. It used lessons learned from the team’s first two-stage attempt, ‘Tantalus’, and incorporated CNC machined parts wherever possible. As the team’s tallest and heaviest rocket to date, an extremely high-thrust N5800 motor propelled B&B off the launch rail, before a long-burning M3800 motor carried the second stage to apogee. This unique rocket would fly in both the 2023 Spaceport America Cup and the 2023 Launch Canada Competition, winning 1st prize in the Launch Canada Advanced Launch category and the competition overall. </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="timeline-2 left-2">
+                    <div class="card">
+                    <img src="/assets/team_pictures/Garibaldi for past projects 1_2.JPG" class="card-img-top"
+                        alt="...">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">Garibaldi - 30k Two-Stage </h4>
+                        <div class="d-flex align-items-center mb-4">
+                            <p class="text-muted mb-0"><i class="fa-solid fa-calendar-days"></i> 2023</p>
+                            <img src="assets/backgrounds/original/ Garibaldi UBC_Rocket_Patch.png" alt="" class="ms-auto" style="height: 64px; width: 64px;">
+                        </div>
+                        <p class="mb-0">Garibaldi is UBC Rocket’s third 30k ft. two-stage rocket and the team’s tallest yet, standing at massive 442cm tall. What made this rocket different from the other two-stages, Tantalus and Beauty & the Beast, is that it is only 6 inches in diameter. A reduction in diameter significantly decreases drag, making the target apogee of 30,000ft more feasible. It featured a payload experiment, testing microbial fuel cells in hyper- and micro-gravity. Garibaldi achieved a nominal separation flight at the 2024 Launch Canada Competition in Ontario! </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+    </main>
+    <footer class="bg-dark py-5" style="margin-top: 200px;">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0 text-white">&copy; UBC Rocket 2024</div></div>
+                <div class="col-auto">
+                    <a class="link-light small" href="mailto: hello@ubcrocket.com">Email us at hello@ubcrocket.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-uppercase" id="regModalLabel">Registration closed</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Currently, we are not accepting applications. Thank you for your interest.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- JQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/scripts2.js"></script>
+</body>
+</html>

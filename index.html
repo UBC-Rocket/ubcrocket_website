@@ -29,102 +29,117 @@
     <body class="d-flex flex-column home-background img-fluid" style="background-image: url('./assets/backgrounds/skypilot-min.webp'); overflow-x: hidden;">
         <main class="flex-shrink-0">
             <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-                <div class="container">
-                    <!-- Align brand to the left -->
-                    <a class="navbar-brand" href="index.html">
-                        <img src="./assets/ubcrocket_logo_white_long.png" alt="..." class="img-fluid img-logo">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <!-- Align brand to the left -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/ubcrocket_logo_white_long.png" alt="..." class="img-fluid img-logo">
+                </a>
+                <div class="ms-auto d-block d-md-none">
+                    <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
                     </a>
-                    <div class="ms-auto d-block d-md-none">
-                        <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <!-- <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a> -->
-                        <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </div>
-                    <!-- Toggler button for mobile view -->
-                    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        Menu
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <!-- Navbar items -->
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <div class="d-flex w-100">
-                            <ul class="navbar-nav me-auto">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                                <li class="nav-item dropdown dropdown-hover dropdown-hover-all">
-                                    <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current projects</a>
-                                    <div class="dropdown-menu" aria-labelledby="projectsDropdown">
-                                        <div class="dropdown dropstart">
-                                            <a class="dropdown-item dropdown-toggle" href="project-COTS.html" id="dropdown-A" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">COTS</a>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-A">
-                                                <a class="dropdown-item" href="project-COTS.html#subteam-A">Payloads</a>
-                                                <a class="dropdown-item" href="project-COTS.html#subteam-B">Internals</a>
-                                                <a class="dropdown-item" href="project-COTS.html#subteam-C">Aerostructures</a>
-                                                <a class="dropdown-item" href="project-COTS.html#subteam-D">Avionics Hardware</a>
-                                                <a class="dropdown-item" href="project-COTS.html#subteam-E">Avionics Software</a>
-                                                <a class="dropdown-item" href="project-COTS.html#subteam-F">Recovery</a>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="dropdown-divider"></div> -->
-                                        <div class="dropdown dropstart">
-                                            <a class="dropdown-item" href="project-LRE.html" id="dropdown-B" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Liquid Rocket Engine</a>
-                                            <!-- <div class="dropdown-menu" aria-labelledby="dropdown-B">
-                                                <a class="dropdown-item" href="#">Subteam A</a>
-                                                <a class="dropdown-item" href="#">Subteam B</a>
-                                                <a class="dropdown-item" href="#">Subteam C</a>
-                                            </div> -->
-                                        </div>
-                                        <div class="dropdown dropstart">
-                                            <a class="dropdown-item" href="project-TVR.html" id="dropdown-C" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thrust Vectoring Rocket</a>
-                                            <!-- <div class="dropdown-menu" aria-labelledby="dropdown-C">
-                                                <a class="dropdown-item" href="#">Subteam A</a>
-                                                <a class="dropdown-item" href="#">Subteam B</a>
-                                                <a class="dropdown-item" href="#">Subteam C</a>
-                                            </div> -->
+                    <!-- <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a> -->
+                    <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <!-- Toggler button for mobile view -->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- Navbar items -->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <div class="d-flex w-100">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item dropdown dropdown-hover dropdown-hover-all">
+                                <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current projects</a>
+                                <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item dropdown-toggle" href="project-COTS.html" id="dropdown-A" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">COTS</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-A">
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-A">Payloads</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-B">Internals</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-C">Aerostructures</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-D">Avionics Hardware</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-E">Avionics Software</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-F">Recovery</a>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
-                                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                                <li class="nav-item"><a class="nav-link nav-pill nav-sponsor d-block d-md-none" href="index.html#sponsors">Sponsor Us</a></li>
-                                <li class="nav-item"><a id="joinUsMobile" class="nav-link nav-pill d-block d-md-none" href="index.html#join-us">Join Us</a></li>
-                            </ul>
-                            <!-- Desktop view -->
-                            <ul class="navbar-nav ms-auto d-none d-md-flex">
-                                <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <!-- <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </a> -->
-                                <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                                <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </a>
-                                <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                                <li class="nav-item"><a class="nav-link mx-2 nav-pill nav-sponsor" href="index.html#sponsors">Sponsor Us</a></li>
-                                <li class="nav-item"><a id="joinUsDesktop" class="nav-link mx-2 nav-pill" href="index.html#join-us">Join Us</a></li>
-                            </ul>
-                        </div>
+                                    <!-- <div class="dropdown-divider"></div> -->
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="project-LRE.html" id="dropdown-B" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Liquid Rocket Engine</a>
+                                        <!-- <div class="dropdown-menu" aria-labelledby="dropdown-B">
+                                            <a class="dropdown-item" href="#">Subteam A</a>
+                                            <a class="dropdown-item" href="#">Subteam B</a>
+                                            <a class="dropdown-item" href="#">Subteam C</a>
+                                        </div> -->
+                                    </div>
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="project-TVR.html" id="dropdown-C" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thrust Vectoring Rocket</a>
+                                        <!-- <div class="dropdown-menu" aria-labelledby="dropdown-C">
+                                            <a class="dropdown-item" href="#">Subteam A</a>
+                                            <a class="dropdown-item" href="#">Subteam B</a>
+                                            <a class="dropdown-item" href="#">Subteam C</a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
+                            <li class="nav-item dropdown dropdown-hover dropdown-hover-all">
+                                <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                                <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="faq.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQ</a>
+                                    </div>
+                                    <!-- <div class="dropdown-divider"></div> -->
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="past-projects.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Past Projects</a>
+                                    </div>
+                                    <!-- <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="project-TVR.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+                                    </div> -->
+                                </div>
+                            </li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li> -->
+                            <li class="nav-item"><a class="nav-link nav-pill nav-sponsor d-block d-md-none" href="index.html#sponsors">Sponsor Us</a></li>
+                            <li class="nav-item"><a id="joinUsMobile" class="nav-link nav-pill d-block d-md-none" href="index.html#join-us">Join Us</a></li>
+                        </ul>
+                        <!-- Desktop view -->
+                        <ul class="navbar-nav ms-auto d-none d-md-flex">
+                            <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <!-- <a class="btn-social mx-2 my-2" href="https://x.com/ubcrocket" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a> -->
+                            <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <li class="nav-item"><a class="nav-link mx-2 nav-pill nav-sponsor" href="index.html#sponsors">Sponsor Us</a></li>
+                            <li class="nav-item"><a id="joinUsDesktop" class="nav-link mx-2 nav-pill" href="index.html#join-us">Join Us</a></li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
             <!-- Title -->
             <section class="masthead">
                 <div class="container" id="title">
