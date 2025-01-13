@@ -12749,6 +12749,7 @@ footer .copyright {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
+    margin-bottom: 0%;
   }
   /* Make sure that all arrows are pointing leftwards */
   .timeline-2::before {
