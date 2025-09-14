@@ -2,46 +2,58 @@
     "label": "Faculty Advisor",
     "name": "Dr. Mattison",
     "children": [{
-        "name": "Kiara Kozak &\n Naomi Goizueta-Serrano",
+        "name": "Naomi Goizueta-Serrano &\n Diba Partovi",
         "label": "Co-Captains",
         "children": [{
-            "name" : "Kiara Kozak &\n Diba Partovi",
+            "name" : "Peter Yazdi &\n Samuel Li",
             "label": "COTS Project Managers",
             "children": [{
-                "name": "Diba Partovi",
+                "name": "Nathan Ding",
                 "label": "Internals Lead"
             }, {
-                "name" : "Naomi Goizueta-Serrano",
-                "label": "Aerostructures Lead"
+                "name" : "Stanley Yang &\n Elias Habert-Clark",
+                "label": "Aerostructures Co-Leads"
             }, {
-                "name" : "Tszkin Charm",
-                "label": "Recovery Lead"
+                "name" : "Tszkin Charm &\n Elsie Jakeway",
+                "label": "Recovery Co-Leads"
             }, {
                 "name" : "Edward Li",
                 "label": "Avionics Software Lead"
             }, {
-                "name" : "Marcus Cheng",
-                "label": "Avionics Hardware Lead"
+                "name" : "Marcus Cheng &\n Peter Yazdi",
+                "label": "Avionics Hardware Co-Leads"
             }, {
-                "name" : "Jonathan Su &\n Tristan Brown",
-                "label": "Payloads Lead"
+                "name" : "Tristan Brown &\n Grace Campbell",
+                "label": "Payloads Co-Leads"
             }]
         }, {
-            "name" : "Viki Loncar",
-            "label": "Liquid Rocket Project Manager",
+            "name" : "Eric Wen &\n Richard Van ",
+            "label": "Liquid Rocket Project Managers",
             "children": [{
-                "name": "Timothy Cai",
+                "name": "Wisnu Buana",
                 "label": "Propulsion Lead"
+            }, {
+                "name": "Timothy Cai",
+                "label": "LR Overlord Advisor"
             }]
         }, {
-            "name" : "Richard Helper &\n Steven Chen",
+            "name" : "Steven Chen &\n Marcus Cheng",
             "label": "Thrust Vectoring Rocket Project Managers",
             "children": [{
-                "name": "Steven Chen",
-                "label": "Software Lead"
+                "name": "Steven Chen &\n Marcus Cheng",
+                "label": "Firmware Co-Leads"
             }, {
-                "name" : "Richard Helper",
-                "label": "Hardware Lead"
+                "name" : "Marcus Cheng &\n Andy Kim",
+                "label": "Avionics Hardware Co-Leads"
+            }, {
+                "name" : "Hannah Yang",
+                "label": "Simulations Lead"
+            }, {
+                "name" : "Josh Chik",
+                "label": "Mechanical Lead"
+            }, {
+                "name" : "Noelia Sheng",
+                "label": "TVR Overlord Advisor"
             }]
         }]
     }]
