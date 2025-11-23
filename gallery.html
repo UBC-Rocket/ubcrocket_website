@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UBC Rocket photo gallery - Browse photos from different years">
+    <title>Photo Gallery - UBC Rocket</title>
+    <!-- Main site styles -->
+    <link href="./css/styles_.css" rel="stylesheet" />
+    <!-- Gallery-specific styles -->
+    <link href="./css/gallery.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#gallery" class="skip-link">Skip to gallery</a>
+
+    <!-- Header -->
+    <header class="gallery-header">
+        <h1>UBC Rocket Photo Gallery</h1>
+        <p class="gallery-subtitle">Explore our journey through the years</p>
+    </header>
+
+    <!-- Gallery Grid -->
+    <main id="gallery" role="main" aria-label="Photo gallery organized by year">
+        <div class="loading" role="status" aria-live="polite">Loading gallery...</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="gallery-footer">
+        <p>&copy; 2025 UBC Rocket. All rights reserved.</p>
+    </footer>
+
+    <!-- Inline JavaScript - Deferred execution -->
+    <script>
+        /**
+         * Gallery data and rendering
+         * Generates year cards dynamically from the years array
+         */
+        (function() {
+            'use strict';
+
+            // Years to display (newest first)
+            const years = ['2024-2025', '2023-2024', '2022-2023', '2016-2017'];
+
+            // Placeholder SVG (simple gradient as data URI)
+            const placeholderSVG = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"%3E%3Cdefs%3E%3ClinearGradient id="grad" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%234a90e2;stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:%2350c9c3;stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width="600" height="600" fill="url(%23grad)"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" fill="white" opacity="0.8"%3EUBC Rocket%3C/text%3E%3C/svg%3E';
+
+            /**
+             * Creates a year card element
+             * @param {string} year - The year string (e.g., "2024-2025")
+             * @returns {HTMLElement} The card element
+             */
+            function createYearCard(year) {
+                // Create card link
+                const card = document.createElement('a');
+                card.className = 'year-card';
+                card.href = `year.html?y=${encodeURIComponent(year)}`;
+                card.setAttribute('aria-label', `View photos from ${year}`);
+
+                // Create thumbnail
+                const img = document.createElement('img');
+                img.className = 'year-thumb';
+                img.src = placeholderSVG;
+                img.alt = `Photo gallery thumbnail for ${year}`;
+                img.width = 600;
+                img.height = 600;
+                img.loading = 'lazy';
+                img.decoding = 'async';
+
+                // Create card content
+                const content = document.createElement('div');
+                content.className = 'card-content';
+
+                const title = document.createElement('h2');
+                title.className = 'year-title';
+                title.textContent = year;
+
+                const caption = document.createElement('p');
+                caption.className = 'year-caption';
+                caption.textContent = 'View photos';
+
+                // Assemble card
+                content.appendChild(title);
+                content.appendChild(caption);
+                card.appendChild(img);
+                card.appendChild(content);
+
+                return card;
+            }
+
+            /**
+             * Renders all year cards into the gallery
+             */
+            function renderGallery() {
+                const gallery = document.getElementById('gallery');
+                
+                // Clear loading message
+                gallery.innerHTML = '';
+
+                // Create and append year cards
+                years.forEach(function(year) {
+                    const card = createYearCard(year);
+                    gallery.appendChild(card);
+                });
+            }
+
+            // Initialize gallery when DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', renderGallery);
+            } else {
+                renderGallery();
+            }
+        })();
+    </script>
+</body>
+</html>
