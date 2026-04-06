@@ -5,67 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="UBC Rocket photo gallery for a specific year">
     <title>UBC Rocket Photos - Year</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Main site styles -->
-    <link href="./css/styles_.css" rel="stylesheet" />
-    <link href="./css/year.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
 </head>
-<body>
-    <!-- Header -->
-    <header class="year-header">
-        <h1 id="yearTitle">UBC Rocket Photos</h1>
-        <a href="gallery.html" class="back-link">← Back to Yearly Gallery</a>
-    </header>
+<body class="bg-dark text-light d-flex flex-column">
+    <main class="flex-shrink-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" style="background-color: #212529 !important;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/ubcrocket_logo_white_long.png" alt="UBC Rocket logo" class="img-fluid img-logo">
+                </a>
+                <div class="ms-auto d-block d-md-none">
+                    <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <div class="d-flex w-100">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item dropdown dropdown-hover dropdown-hover-all">
+                                <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current projects</a>
+                                <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item dropdown-toggle" href="project-COTS.html" id="dropdown-A" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">COTS</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-A">
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-A">Payloads</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-B">Internals</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-C">Aerostructures</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-D">Avionics Hardware</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-E">Avionics Software</a>
+                                            <a class="dropdown-item" href="project-COTS.html#subteam-F">Recovery</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="project-LRE.html" id="dropdown-B" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Liquid Rocket Engine</a>
+                                    </div>
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="project-TVR.html" id="dropdown-C" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thrust Vectoring Rocket</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
+                            <li class="nav-item dropdown dropdown-hover dropdown-hover-all">
+                                <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                                <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="faq.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQ</a>
+                                    </div>
+                                    <div class="dropdown dropstart">
+                                        <a class="dropdown-item" href="past-projects.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Past Projects</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link nav-pill nav-sponsor d-block d-md-none" href="index.html#sponsors">Sponsor Us</a></li>
+                            <li class="nav-item"><a id="joinUsMobile" class="nav-link nav-pill d-block d-md-none" href="index.html#join-us">Join Us</a></li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto d-none d-md-flex">
+                            <a class="btn-social mx-2 my-2" href="https://facebook.com/ubcrocket" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://www.instagram.com/ubcrocket/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://www.linkedin.com/company/ubc-rocket/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a class="btn-social mx-2 my-2" href="https://www.youtube.com/channel/UCxxgdake-xHWblLRLDJUpNw" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <li class="nav-item"><a class="nav-link mx-2 nav-pill nav-sponsor" href="index.html#sponsors">Sponsor Us</a></li>
+                            <li class="nav-item"><a id="joinUsDesktop" class="nav-link mx-2 nav-pill" href="index.html#join-us">Join Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header class="py-5 bg-dark border-bottom mt-5 pt-5">
+            <div class="container d-flex flex-column gap-3 align-items-start align-items-md-center text-md-center text-light">
+                <p class="text-uppercase fw-semibold mb-1 small text-light">Photos</p>
+                <h1 id="yearTitle" class="display-5 mb-0 w-100 text-center text-md-center fw-bold">UBC Rocket Photos</h1>
+                <a href="gallery.html" class="btn btn-outline-light btn-sm align-self-start align-self-md-center">
+                    <span aria-hidden="true">←</span>
+                    <span class="ms-2">Back to Yearly Gallery</span>
+                </a>
+            </div>
+        </header>
 
-    <!-- Main Content -->
-    <main class="container" aria-live="polite">
-        <div id="yearSections"></div>
+        <main class="container py-5 text-light" aria-live="polite">
+            <div id="yearSections" class="vstack gap-4"></div>
+        </main>
+
+        <div class="modal fade" id="photoModal" tabindex="-1" aria-hidden="true" aria-labelledby="photoModalLabel">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-dark text-white border-0">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="photoModalLabel">Photo preview</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="lightboxImg" class="img-fluid rounded-3 w-100" alt="" style="max-height: 70vh; object-fit: contain;">
+                        <p id="lightboxCaption" class="small text-white-50 mt-3 mb-0"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 UBC Rocket. All rights reserved.</p>
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0 text-white">&copy; UBC Rocket 2024</div></div>
+                <div class="col-auto">
+                    <a class="link-light small" href="mailto: hello@ubcrocket.com">Email us at hello@ubcrocket.com</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
-        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
-        <img id="lightboxImg" src="" alt="">
-    </div>
+    <!-- JQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/scripts2.js"></script>
 
-    <!-- JavaScript -->
     <script>
         (function() {
             'use strict';
 
             const sectionsContainer = document.getElementById('yearSections');
             const yearTitleEl = document.getElementById('yearTitle');
+            const modalEl = document.getElementById('photoModal');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const lightboxCaption = document.getElementById('lightboxCaption');
+            const modalInstance = modalEl ? new bootstrap.Modal(modalEl) : null;
 
-            // Get year from query parameter
             const urlParams = new URLSearchParams(window.location.search);
             const year = urlParams.get('y') || '2024-2025';
 
-            // Update page chrome based on the selected year
             document.title = `UBC Rocket Photos - ${year}`;
             yearTitleEl.textContent = `${year} UBC Rocket Photos`;
 
-            // Generate placeholder SVGs with different colors
-            const colors = [
-                ['#4a90e2', '#50c9c3'], 
-                ['#ff6b6b', '#feca57'], 
-                ['#48dbfb', '#0abde3'], 
-                ['#ee5a6f', '#f368e0'], 
-                ['#00d2d3', '#54a0ff'], 
-                ['#1dd1a1', '#10ac84'], 
-                ['#ff9ff3', '#feca57'],
-                ['#5f27cd', '#341f97'],
-                ['#00d2d3', '#1dd1a1']  
-            ];
-
-            function createPlaceholderSVG(label, index) {
-                const colorPair = colors[index % colors.length];
+            function createPlaceholderSVG(label) {
                 const safeLabel = label.replace(/&/g, '&amp;');
-                return `data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"%3E%3Cdefs%3E%3ClinearGradient id="grad${index}" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:${colorPair[0].replace('#', '%23')};stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:${colorPair[1].replace('#', '%23')};stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width="800" height="600" fill="url(%23grad${index})"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="white" opacity="0.9"%3E${safeLabel}%3C/text%3E%3C/svg%3E`;
+                return `data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"%3E%3Crect width="800" height="600" fill="%23e9ecef"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="32" fill="%236c757d" opacity="0.9"%3E${safeLabel}%3C/text%3E%3C/svg%3E`;
             }
+
 
             const YEAR_DATA = {
                 "2024-2025": {
@@ -73,119 +180,137 @@
                         {
                             title: "International Rocket Engineering Competition (IREC)",
                             photos: [
-                                { src: createPlaceholderSVG('IREC pad prep', 0), alt: 'Team performing pad preparations for IREC 2024' },
-                                { src: createPlaceholderSVG('IREC systems check', 1), alt: 'Avionics team running pre-launch systems checks' },
-                                { src: createPlaceholderSVG('IREC ascent', 2), alt: 'Rocket ascending during IREC qualification flight' }
+                                { src: createPlaceholderSVG('IREC pad prep'), alt: 'Team performing pad preparations for IREC 2024' },
+                                { src: createPlaceholderSVG('IREC systems check'), alt: 'Avionics team running pre-launch systems checks' },
+                                { src: createPlaceholderSVG('IREC ascent'), alt: 'Rocket ascending during IREC qualification flight' }
                             ]
                         },
                         {
                             title: "Launch Canada Rocketry Competition (LC)",
                             photos: [
-                                { src: createPlaceholderSVG('LC fabrication', 3), alt: 'Composite layup work ahead of Launch Canada' },
-                                { src: createPlaceholderSVG('LC launch rail', 4), alt: 'Booster mounted on the launch rail for LC competition' },
-                                { src: createPlaceholderSVG('LC recovery', 5), alt: 'Recovery team posing with vehicle after LC flight' }
+                                { src: createPlaceholderSVG('LC fabrication'), alt: 'Composite layup work ahead of Launch Canada' },
+                                { src: createPlaceholderSVG('LC launch rail'), alt: 'Booster mounted on the launch rail for LC competition' },
+                                { src: createPlaceholderSVG('LC recovery'), alt: 'Recovery team posing with vehicle after LC flight' }
                             ]
                         },
                         {
                             title: "General UBC Rocket Photos",
                             photos: [
-                                { src: createPlaceholderSVG('Design review', 6), alt: 'Students presenting propulsion updates during design review' },
-                                { src: createPlaceholderSVG('Subsystem collaboration', 7), alt: 'Structures and avionics subteams collaborating in the lab' },
-                                { src: createPlaceholderSVG('Outreach event', 8), alt: 'UBC Rocket outreach display on campus' }
+                                { src: createPlaceholderSVG('Design review'), alt: 'Students presenting propulsion updates during design review' },
+                                { src: createPlaceholderSVG('Subsystem collaboration'), alt: 'Structures and avionics subteams collaborating in the lab' },
+                                { src: createPlaceholderSVG('Outreach event'), alt: 'UBC Rocket outreach display on campus' }
                             ]
                         }
                     ]
                 }
+
+                // create section for each year
             };
 
-            // Create photo element
-            function createPhotoElement(src, alt, index) {
-                const div = document.createElement('div');
-                div.className = 'photo-item';
+            function openLightbox(src, alt) {
+                if (!modalInstance || !lightboxImg || !lightboxCaption) return;
+
+                lightboxImg.src = src;
+                lightboxImg.alt = alt;
+                lightboxCaption.textContent = alt;
+                modalInstance.show();
+            }
+
+            function createPhotoCard(photo, altText) {
+                const col = document.createElement('div');
+                col.className = 'col';
+
+                const card = document.createElement('div');
+                card.className = 'card h-100 border-0 shadow-sm';
+                card.setAttribute('role', 'button');
+                card.tabIndex = 0;
+
+                const imgWrapper = document.createElement('div');
+                imgWrapper.className = 'ratio ratio-4x3 bg-body-secondary rounded-top overflow-hidden';
 
                 const img = document.createElement('img');
-                img.src = src;
-                img.alt = alt;
+                img.src = photo.src;
+                img.alt = altText;
                 img.width = 800;
                 img.height = 600;
                 img.loading = 'lazy';
                 img.decoding = 'async';
-                img.style.background = '#eee';
-                img.dataset.fullSrc = src;
+                img.className = 'w-100 h-100';
+                img.style.objectFit = 'cover';
 
-                div.appendChild(img);
-                div.addEventListener('click', function() {
-                    openLightbox(src, alt);
+                imgWrapper.appendChild(img);
+
+                const body = document.createElement('div');
+                body.className = 'card-body';
+                const caption = document.createElement('p');
+                caption.className = 'card-text small text-secondary mb-0';
+                caption.textContent = altText;
+                body.appendChild(caption);
+
+                card.appendChild(imgWrapper);
+                card.appendChild(body);
+
+                card.addEventListener('click', function() {
+                    openLightbox(photo.src, altText);
+                });
+                card.addEventListener('keydown', function(event) {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        openLightbox(photo.src, altText);
+                    }
                 });
 
-                return div;
+                col.appendChild(card);
+                return col;
             }
 
             function renderSections(yearInfo) {
                 sectionsContainer.innerHTML = '';
                 if (!yearInfo || !Array.isArray(yearInfo.sections) || !yearInfo.sections.length) {
-                    sectionsContainer.innerHTML = `<p class="empty-state">We don't have any gallery entries for ${year} yet. Please check back soon.</p>`;
+                    const empty = document.createElement('div');
+                    empty.className = 'alert alert-info text-center mb-0';
+                    empty.textContent = `We don't have any gallery entries for ${year} yet. Please check back soon.`;
+                    sectionsContainer.appendChild(empty);
                     return;
                 }
 
-                yearInfo.sections.forEach((section, sectionIndex) => {
+                yearInfo.sections.forEach((section) => {
                     const sectionEl = document.createElement('section');
-                    sectionEl.className = 'section';
+                    sectionEl.className = 'mb-5';
+
+                    const headingRow = document.createElement('div');
+                    headingRow.className = 'd-flex align-items-center justify-content-between flex-wrap gap-3 mb-3';
 
                     const heading = document.createElement('h2');
+                    heading.className = 'h4 mb-0';
                     heading.textContent = `${section.title} ${year}`;
-                    sectionEl.appendChild(heading);
+
+                    headingRow.appendChild(heading);
+                    sectionEl.appendChild(headingRow);
 
                     const grid = document.createElement('div');
-                    grid.className = 'photo-grid';
-                    sectionEl.appendChild(grid);
-
+                    grid.className = 'row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4';
                     section.photos.forEach((photo, photoIndex) => {
                         const altText = photo.alt || `${section.title} photo ${photoIndex + 1} from ${year}`;
-                        grid.appendChild(createPhotoElement(photo.src, altText, sectionIndex * 10 + photoIndex));
+                        grid.appendChild(createPhotoCard(photo, altText));
                     });
 
+                    sectionEl.appendChild(grid);
                     sectionsContainer.appendChild(sectionEl);
                 });
             }
 
             renderSections(YEAR_DATA[year]);
 
-            // Lightbox functionality
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightboxImg');
-            const lightboxClose = document.getElementById('lightboxClose');
-
-            function openLightbox(src, alt) {
-                lightboxImg.src = src;
-                lightboxImg.alt = alt;
-                lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden';
+            if (modalEl) {
+                modalEl.addEventListener('hidden.bs.modal', function() {
+                    lightboxImg.src = '';
+                    lightboxImg.alt = '';
+                    lightboxCaption.textContent = '';
+                });
             }
-
-            function closeLightbox() {
-                lightbox.classList.remove('active');
-                document.body.style.overflow = '';
-                lightboxImg.src = '';
-            }
-
-            // Close lightbox on button click
-            lightboxClose.addEventListener('click', closeLightbox);
-
-            // Close lightbox on overlay click
-            lightbox.addEventListener('click', function(e) {
-                if (e.target === lightbox) {
-                    closeLightbox();
-                }
-            });
-
-            // Close lightbox on ESC key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-                    closeLightbox();
-                }
-            });
         })();
     </script>
+
 </body>
 </html>
